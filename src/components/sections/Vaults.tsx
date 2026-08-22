@@ -5,34 +5,34 @@ import { motion } from "framer-motion"
 import GlareHover from "@/components/reactbits/GlareHover"
 import { Parallax } from "@/components/ui/parallax"
 
-const vaults = [
+const pillars = [
   {
-    name: "Node 01",
-    title: "Field Agent Network",
-    desc: "The frontline application that turns field agents into verifiable data collectors. Polygonal land mapping, biometric farmer KYC, and encrypted capture at point-zero of production.",
+    name: "Pilar 01",
+    title: "Program PADIKU Desa",
+    desc: "Pemberdayaan Masyarakat melalui Agribisnis, Diversifikasi Pangan, dan Ekonomi Sirkular di Desa Jagapura Kulon, Kecamatan Gegesik, Cirebon. Mengoptimalkan potensi pertanian desa secara berkelanjutan.",
     meta: [
-      { label: "Mapping", val: "Sub-meter GPS" },
-      { label: "Enrollment", val: "Biometric KYC" },
+      { label: "Luas Persawahan", val: "448 Hektar" },
+      { label: "Komoditas", val: "Padi & Sekam Organik" },
     ],
     image: "/chili.jpg",
   },
   {
-    name: "Node 02",
-    title: "Enterprise Console",
-    desc: "The command center for headquarters. Real-time supply chain visibility, EUDR document management, full batch provenance, and automated audit-ready reporting.",
+    name: "Pilar 02",
+    title: "Kelompok Tani (Poktan)",
+    desc: "Wadah kolaborasi para petani lokal dan pengelola UMKM desa dalam memproduksi pupuk organik sekam bakar, kompos bio-nutrisi, dan media tanam sirkular ramah lingkungan.",
     meta: [
-      { label: "Visibility", val: "Real-time batches" },
-      { label: "Reporting", val: "Audit-ready" },
+      { label: "Pengelola", val: "Poktan Jagapura Kulon" },
+      { label: "Produk Utama", val: "Pupuk & Media Tanam" },
     ],
     image: "/coffee.jpg",
   },
   {
-    name: "Node 03",
-    title: "Logistical Nodes",
-    desc: "The connective tissue between farm and port. IoT sensors in warehouses, QR check-ins at collection points, and GPS fleet tracking link every movement to its passport.",
+    name: "Pilar 03",
+    title: "Pendampingan KKM UMC 2026",
+    desc: "Program kerja individu Teknik Informatika Universitas Muhammadiyah Cirebon (Andi Nugroho - NIM 230511179, DPL: Ari Yulistianingsih, M.Gz) untuk membangun landing page e-katalog dan pemasaran digital UMKM.",
     meta: [
-      { label: "Warehouse", val: "IoT sensors" },
-      { label: "Transport", val: "GPS fleet tracking" },
+      { label: "Institusi", val: "Univ. Muhammadiyah Cirebon" },
+      { label: "Fokus Proker", val: "Digitalisasi & E-Katalog" },
     ],
     image: "/hero2.jpg",
   },
@@ -40,20 +40,19 @@ const vaults = [
 
 export function Vaults() {
   return (
-    <section id="infrastructure" className="vault-mobile-section">
+    <section id="tentang" className="vault-mobile-section">
       <div className="vault-mobile-header">
-        <div className="section-label">Infrastructure</div>
+        <div className="section-label">Tentang Kami</div>
         <h2 className="section-title">
-          Three nodes. One <em>unbreakable</em> chain.
+          Sinergi Petani Desa & <em>Digitalisasi UMC.</em>
         </h2>
         <p className="section-sub">
-          From the farmer&apos;s field to the corporate boardroom, every data
-          point flows through purpose-built infrastructure.
+          Mengenal lebih dekat profil Program PADIKU, peran aktif Kelompok Tani Desa Jagapura Kulon, dan pendampingan digitalisasi KKM UMC 2026.
         </p>
       </div>
 
       <div className="vault-mobile-list">
-        {vaults.map((vault, i) => (
+        {pillars.map((vault, i) => (
           <motion.div
             key={vault.title}
             className="vault-mobile-card"

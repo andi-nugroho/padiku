@@ -14,24 +14,23 @@ export function AboutPanora() {
     <>
       <section id="why" className="statements">
         <div className="statements-inner">
-          <div className="section-label">The compliance imperative</div>
+          <div className="section-label">Kenapa PADIKU</div>
 
           <h2 className="statement">
-            <ScrollReveal text="EUDR deadlines are closing in on every commodity desk." />
+            <ScrollReveal text="Lahan persawahan seluas 448 hektar di Desa Jagapura Kulon menghasilkan sekam padi yang sangat melimpah." />
           </h2>
 
           <div>
             <h2 className="statement statement--sage">
-              <ScrollReveal text="Yet first-mile data is still paper receipts, spreadsheets, and claims nobody can verify." />
+              <ScrollReveal text="Namun, tanpa pengolahan sirkular, limbah pertanian ini kerap dibakar dan mencemari kualitas udara persawahan." />
             </h2>
             <p className="statement-note">
-              Supply chain opacity is no longer acceptable. The cost of
-              non-compliance far exceeds the cost of transformation.
+              Urgensi Ekonomi Sirkular: Mengubah limbah berlimpah menjadi pupuk organik dan media tanam bernilai ekonomi tinggi yang menyuburkan kembali tanah desa.
             </p>
           </div>
 
           <h2 className="statement">
-            <ScrollReveal text="What if every batch carried proof a regulator cannot challenge?" />
+            <ScrollReveal text="Bagaimana jika setiap karung sekam diolah menjadi nutrisi tanah dan sumber pendapatan baru petani?" />
           </h2>
         </div>
       </section>
@@ -39,18 +38,13 @@ export function AboutPanora() {
       <section className="better-way">
         <div className="better-way-inner">
           <h2 className="better-way-title">
-            <SplitText text="We make compliance" /> <em><SplitText text="provable." delay={0.3} /></em>
+            <SplitText text="Kami menghadirkan" /> <em><SplitText text="Ekonomi Sirkular Desa." delay={0.3} /></em>
           </h2>
           <p className="better-way-text">
-            <strong>Panora Digital Product Passports</strong> capture
-            GPS-tagged polygon coordinates at the point of harvest, encrypted
-            and timestamped on-chain. Every touchpoint from farm gate to
-            warehouse becomes auditable and tamper-proof, and milestone-gated
-            disbursement locks working capital until verified delivery events
-            occur. No black box. No challengeable claims.
+            <strong>Program PADIKU</strong> (Pemberdayaan Masyarakat melalui Agribisnis, Diversifikasi Pangan, dan Ekonomi Sirkular) lahir dari inisiatif kelompok tani Desa Jagapura Kulon bersama pendampingan KKM Universitas Muhammadiyah Cirebon. Kami memproses limbah sekam padi menjadi biochar sekam bakar, kompos bio-organik, dan media tanam unggulan secara transparan, ramah lingkungan, dan memberdayakan ekonomi lokal.
           </p>
-          <Link href="#how" className="text-btn">
-            See the chain of custody
+          <Link href="#proses" className="text-btn">
+            Lihat Alur Proses Produksi
             <svg width="15" height="15" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M5 12H19" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
               <path d="M13 6L19 12L13 18" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />

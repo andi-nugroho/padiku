@@ -10,9 +10,21 @@ const hanken = Hanken_Grotesk({
 });
 
 export const metadata: Metadata = {
-  title: "Panora — First-Mile Traceability & EUDR Compliance",
+  title: "Program PADIKU — Digitalisasi UMKM & Ekonomi Sirkular Desa Jagapura Kulon",
   description:
-    "Panora bridges the gap between smallholder farmers and global trading houses through immutable digital product passports, ensuring bulletproof compliance and capital safety.",
+    "Website resmi Program PADIKU Desa Jagapura Kulon, Kecamatan Gegesik, Kabupaten Cirebon. Media digitalisasi UMKM agribisnis, pupuk organik sekam padi, kompos bio-nutrisi, dan media tanam sirkular.",
+  keywords: [
+    "PADIKU",
+    "Desa Jagapura Kulon",
+    "Gegesik Cirebon",
+    "Ekonomi Sirkular",
+    "Pupuk Organik Sekam Padi",
+    "Kompos Bio Organik",
+    "Media Tanam",
+    "UMKM Cirebon",
+    "KKM UMC 2026",
+    "Universitas Muhammadiyah Cirebon",
+  ],
 };
 
 export default function RootLayout({
@@ -21,7 +33,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={hanken.variable}>
+    <html lang="id" className={hanken.variable}>
       <body>{children}</body>
     </html>
   );

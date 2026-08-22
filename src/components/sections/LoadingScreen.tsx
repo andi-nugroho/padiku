@@ -1,6 +1,5 @@
 "use client"
 
-import Image from "next/image"
 import { motion, AnimatePresence } from "framer-motion"
 import { useEffect, useState } from "react"
 
@@ -41,15 +40,15 @@ export function LoadingScreen({ onComplete }: { onComplete: () => void }) {
               initial={{ opacity: 0, scale: 0.85 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.6, ease: "easeOut" }}
+              className="flex flex-col items-center gap-2 mb-4"
             >
-              <Image
-                src="/logo.png"
-                alt="Panora Labs"
-                width={1456}
-                height={816}
-                className="loading-logo"
-                priority
-              />
+              <div className="text-5xl">🌾</div>
+              <span className="text-2xl font-bold text-[var(--olive-950)] tracking-tight">
+                PADIKU
+              </span>
+              <span className="text-xs font-semibold text-[var(--stone)] uppercase tracking-widest">
+                Desa Jagapura Kulon
+              </span>
             </motion.div>
 
             {/* Progress bar */}

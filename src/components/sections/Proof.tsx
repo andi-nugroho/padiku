@@ -1,50 +1,38 @@
 "use client"
 
-/* eslint-disable @next/next/no-img-element */
 import LogoLoop from "@/components/reactbits/LogoLoop"
 
 /* Marks-only logos get a wordmark span; JPGs with a baked background
    render as rounded badges; dark marks invert for the olive band. */
-const logos = [
-  {
-    node: (
-      <span className="proof-logo">
-        <img src="/LOGO/solana-white.png" alt="" />
-      </span>
-    ),
-    ariaLabel: "Solana",
-  },
-  {
-    node: (
-      <span className="proof-logo">
-        <img src="/LOGO/metaplex.webp" alt="" className="proof-logo-invert" />
-      </span>
-    ),
-    ariaLabel: "Metaplex",
-  },
-  {
-    node: (
-      <span className="proof-logo">
-        <img src="/LOGO/superteam.jpg" alt="" className="proof-logo-badge" />
-      </span>
-    ),
-    ariaLabel: "Superteam",
-  },
+const partners = [
+  "Universitas Muhammadiyah Cirebon",
+  "KKM 29 Jagapura Kulon",
+  "Pemerintah Desa Jagapura Kulon",
+  "Kelompok Tani (Poktan) Desa",
 ]
+
+const logos = partners.map((partner) => ({
+  node: (
+    <span className="proof-logo font-bold text-lg tracking-wide text-white/90 whitespace-nowrap bg-white/10 px-4 py-2 rounded-full border border-white/20">
+      🌾 {partner}
+    </span>
+  ),
+  ariaLabel: partner,
+}))
 
 export function Proof() {
   return (
     <section id="proof" className="proof-section">
-      <div className="proof-label">Built on enterprise-grade infrastructure</div>
+      <div className="proof-label">Mitra Kolaborasi & Pendampingan Program</div>
       <LogoLoop
         logos={logos}
-        speed={60}
-        logoHeight={52}
-        gap={110}
+        speed={40}
+        logoHeight={44}
+        gap={60}
         pauseOnHover
         fadeOut
         fadeOutColor="#404f1d"
-        ariaLabel="Powered by Solana, Metaplex, and Superteam"
+        ariaLabel="Kemitraan Universitas Muhammadiyah Cirebon dan Pemerintah Desa Jagapura Kulon"
       />
     </section>
   )

@@ -17,6 +17,9 @@ const fadeUp = (delay: number, ready: boolean) => ({
 const heroImages = ["/hero.jpg", "/hero1.jpg", "/hero2.jpg", "/hero3.jpg"]
 const ROTATE_INTERVAL = 5000
 
+const WA_URL =
+  "https://wa.me/6285179778898?text=Halo%20Pengelola%20PADIKU%20Desa%20Jagapura%20Kulon%2C%20saya%20ingin%20berkonsultasi%20dan%20memesan%20produk%20UMKM."
+
 export function Hero({ ready }: { ready: boolean }) {
   const [currentIndex, setCurrentIndex] = useState(0)
   const reduceMotion = useReducedMotion()
@@ -34,25 +37,26 @@ export function Hero({ ready }: { ready: boolean }) {
   return (
     <section id="hero" className="hero">
       <h1 className="hero-title">
-        <SplitText text="Supply chains," animate={ready} delay={0.1} />
+        <SplitText text="Ekonomi Sirkular Desa," animate={ready} delay={0.1} />
         <br />
         <span className="hero-title-accent">
-          <SplitText text="made bulletproof." animate={ready} delay={0.35} />
+          <SplitText text="Pemberdayaan PADIKU." animate={ready} delay={0.35} />
         </span>
       </h1>
 
       <div className="hero-row">
         <motion.p className="hero-description" {...fadeUp(0.55, ready)}>
-          Panora bridges smallholder farmers and global trading houses through
-          immutable digital product passports. First-mile traceability, EUDR
-          compliance, and capital safety, verified on Solana.
+          Program PADIKU mengoptimalkan limbah sekam padi dari 448 hektar persawahan
+          di Desa Jagapura Kulon, Kecamatan Gegesik, Kabupaten Cirebon.
+          Menghadirkan pupuk organik sekam, kompos bio-nutrisi, dan media tanam
+          sirkular ramah lingkungan.
         </motion.p>
 
         <motion.div className="hero-buttons" {...fadeUp(0.65, ready)}>
           <Magnet padding={60} magnetStrength={6}>
             <Button variant="hero-cta" asChild>
-              <Link href="mailto:hello@panora.farm">
-                Request enterprise demo
+              <Link href="#katalog">
+                Lihat Katalog Produk
                 <svg className="-mr-1" width="15" height="15" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M5 12H19" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
                   <path d="M13 6L19 12L13 18" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
@@ -61,7 +65,9 @@ export function Hero({ ready }: { ready: boolean }) {
             </Button>
           </Magnet>
           <Button variant="hero-ghost" asChild>
-            <Link href="/app">Launch console</Link>
+            <a href={WA_URL} target="_blank" rel="noopener noreferrer">
+              Pesan via WhatsApp
+            </a>
           </Button>
         </motion.div>
       </div>
@@ -89,7 +95,7 @@ export function Hero({ ready }: { ready: boolean }) {
             >
               <Image
                 src={src}
-                alt="Smallholder partner farm in a Panora pilot corridor, Indonesia"
+                alt="Kawasan Persawahan & Pengolahan Sekam Padi Desa Jagapura Kulon, Kecamatan Gegesik"
                 fill
                 priority={i === 0}
                 className="hero-bg-photo"
@@ -97,7 +103,9 @@ export function Hero({ ready }: { ready: boolean }) {
             </motion.div>
           ))}
         </motion.div>
-        <div className="hero-media-caption">First-mile origins. Smallholder partner farms, Indonesia</div>
+        <div className="hero-media-caption">
+          Kawasan Persawahan & Pengolahan Sekam Padi seluas 448 Ha, Desa Jagapura Kulon, Kec. Gegesik, Kab. Cirebon
+        </div>
       </motion.div>
     </section>
   )

@@ -5,34 +5,34 @@ import { motion, AnimatePresence } from "framer-motion"
 
 const faqItems = [
   {
-    question: "What is Panora?",
+    question: "Apa itu Program PADIKU di Desa Jagapura Kulon?",
     answer:
-      "Panora is first-mile traceability and EUDR compliance infrastructure for global commodity supply chains. It bridges smallholder farmers and global trading houses through immutable Digital Product Passports on Solana, so every batch is auditable from farm gate to port.",
+      "Program PADIKU (Pemberdayaan Masyarakat melalui Agribisnis, Diversifikasi Pangan, dan Ekonomi Sirkular) adalah inisiatif pengolahan limbah sekam padi dari 448 hektar persawahan Desa Jagapura Kulon, Kecamatan Gegesik, Cirebon menjadi pupuk organik, kompos bio-nutrisi, dan media tanam bernilai ekonomi tinggi.",
   },
   {
-    question: "What does EUDR compliance actually require?",
+    question: "Bagaimana cara melakukan pemesanan produk?",
     answer:
-      "The EU Deforestation Regulation demands irrefutable evidence that commodities originate from non-deforested land. Panora captures GPS-tagged polygon coordinates at the point of harvest, encrypted and timestamped on-chain, creating audit trails that regulators cannot challenge.",
+      "Pemesanan sangat praktis! Anda dapat mengklik tombol 'Pesan via WhatsApp' pada katalog produk yang diinginkan. Sistem akan mengarahkan Anda ke akun WhatsApp resmi Pengelola UMKM & Poktan Desa Jagapura Kulon untuk mengonfirmasi jumlah pesanan dan alamat pengiriman.",
   },
   {
-    question: "Does my team need to understand blockchain?",
+    question: "Apakah pupuk sekam bakar dan kompos cocok untuk semua tanaman?",
     answer:
-      "No. Panora takes a Silent Web3 approach: field staff log in with email or Google via Web3Auth, headquarters uses enterprise SSO, and nobody ever sees a wallet address or signs a blockchain transaction. Your IT team gets immutability, your operations team gets simplicity.",
+      "Sangat cocok! Pupuk sekam bakar (biochar) berfungsi melonggarkan struktur tanah dan menetralisir keasaman pH, sedangkan pupuk kompos bio-organik memberikan nutrisi makro/mikro alami. Keduanya cocok untuk tanaman persawahan, hortikultura (cabai, tomat, sayur), tanaman buah, dan tanaman hias pot.",
   },
   {
-    question: "How does Panora fit into our existing systems?",
+    question: "Apakah melayani pemesanan grosir atau partai besar?",
     answer:
-      "REST APIs and webhooks integrate with your current ERP or SAP stack, so no infrastructure overhaul is required. Panora runs on multi-region cloud infrastructure with a 99.9% uptime SLA, edge-optimized for low-connectivity field operations across Southeast Asia and Africa.",
+      "Ya, kami melayani baik pembelian eceran ritel maupun pemesanan grosir/partai besar untuk kelompok tani, perkebunan, atau distributor pupuk. Untuk pemesanan jumlah besar, kami menyediakan harga khusus dan pengiriman langsung via kargo armada desa.",
   },
   {
-    question: "How is working capital protected in the field?",
+    question: "Bagaimana sistem pengiriman dan metode pembayaran?",
     answer:
-      "Milestone-gated disbursement locks funds until verified delivery events occur on-chain. Capital deployed into remote supply chains stays protected from field-level leakage and misallocation, with a complete audit trail for every release.",
+      "Pengiriman dapat dilakukan melalui armada truk/pickup lokal desa untuk area Cirebon & sekitarnya, serta jasa pengiriman kargo darat untuk luar daerah. Pembayaran dapat dilakukan via transfer bank resmi pengelola atau metode Cash on Delivery (COD) sesuai kesepakatan.",
   },
   {
-    question: "Has this been proven in the field?",
+    question: "Siapa pengelola program ini dan bagaimana bentuk pendampingannya?",
     answer:
-      "Panora placed Top 10 at the SEABW Hackathon (supported by AWS, selected from 200+ global registrants) and 4th at Indonesia's premier national campus blockchain competition with Superteam Indonesia. Our flagship pilot, the Sumatra South Coffee Corridor in Pagar Alam, covers the complete coffee supply chain from smallholder farms through collection points to export warehouses.",
+      "Program ini dikelola langsung oleh Kelompok Tani (Poktan) dan UMKM Desa Jagapura Kulon dengan pendampingan digitalisasi oleh Mahasiswa Teknik Informatika Universitas Muhammadiyah Cirebon (Andi Nugroho - NIM 230511179, DPL: Ari Yulistianingsih, M.Gz) melalui kegiatan KKM UMC 2026.",
   },
 ]
 
@@ -113,9 +113,9 @@ export function FAQ() {
         transition={{ duration: 0.6, ease: "easeOut" }}
       >
         <div className="faq-header">
-          <span className="section-label">Got Questions?</span>
+          <span className="section-label">Informasi & Panduan Konsumen</span>
           <h2 className="section-title">
-            Frequently Asked <em>Questions</em>
+            Tanya Jawab <em>Seputar PADIKU</em>
           </h2>
         </div>
 

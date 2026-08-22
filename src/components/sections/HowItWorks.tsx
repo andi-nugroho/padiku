@@ -6,37 +6,37 @@ import Image from "next/image"
 const steps = [
   {
     n: "01",
-    title: "Capture",
-    desc: "Field agents map every farm as a GPS polygon with sub-meter accuracy and enroll farmers with biometric KYC before harvest begins.",
-    tag: "Sub-meter GPS polygons",
+    title: "Pengumpulan Sekam Padi",
+    desc: "Pengumpulan limbah sekam padi segar secara terorganisir dari fasilitas penggilingan padi dan 448 hektar lahan persawahan petani Desa Jagapura Kulon.",
+    tag: "Bahan Baku 100% Lokal Desa",
     image: "/hero.jpg",
   },
   {
     n: "02",
-    title: "Verify",
-    desc: "Harvest origin, farmer identity, and land boundaries are encrypted and timestamped at point-zero of production. Offline-first for remote field conditions.",
-    tag: "Cryptographic integrity",
+    title: "Karbonasi & Pembakaran Biochar",
+    desc: "Sekam padi diproses melalui teknik pembakaran tak sempurna (pyrolysis sederhana) untuk memproduksi sekam bakar/biochar yang kaya unsur hara dan porositas tinggi.",
+    tag: "Sekam Bakar / Biochar Organik",
     image: "/padi.jpg",
   },
   {
     n: "03",
-    title: "Mint",
-    desc: "Each commodity batch becomes a Digital Product Passport: a compressed NFT permanently encoding coordinates, certifications, and transaction history.",
-    tag: "Tamper-proof by design",
+    title: "Fermentasi Kompos Bio-Organik",
+    desc: "Pencampuran sekam dengan mikroorganisme pengurai (dekomposer) dalam wadah komposter portable hingga matang sempurna dan kaya nutrisi makro/mikro.",
+    tag: "Fermentasi Komposter Portable",
     image: "/coffee.jpg",
   },
   {
     n: "04",
-    title: "Move",
-    desc: "Sensor-equipped warehouses and GPS-tracked transport record every movement. QR check-ins validate chain-of-custody at each handoff.",
-    tag: "Warehouse and transport nodes",
+    title: "Pengayakan & Formulasi Media Tanam",
+    desc: "Proses pengayakan halus dan formulasi racikan media tanam (sekam lapuk, kompos, & tanah humus) dengan standar nutrisi seimbang untuk hortikultura.",
+    tag: "Uji Kualitas & Formulasi Seimbang",
     image: "/hero1.jpg",
   },
   {
     n: "05",
-    title: "Report",
-    desc: "Headquarters monitors every batch in real time and generates audit-ready EUDR compliance reports with a single click.",
-    tag: "One-click EUDR reports",
+    title: "Pengemasan & E-Katalog Digital",
+    desc: "Produk dikemas higienis dalam karung tahan lembap, diberi sertifikasi kelayakan kelompok tani, dan dipasarkan secara digital via e-katalog WhatsApp Hub.",
+    tag: "Siap Distribusi & Pesan WA",
     image: "/hero3.jpg",
   },
 ] as const
@@ -62,15 +62,14 @@ export function HowItWorks() {
   }, [])
 
   return (
-    <section id="how" className="process">
+    <section id="proses" className="process">
       <div className="process-header">
-        <div className="section-label">Chain of custody</div>
+        <div className="section-label">Proses Produksi</div>
         <h2 className="section-title">
-          From farm gate to <em>boardroom.</em>
+          Dari limbah sawah menjadi <em>nutrisi tanah unggulan.</em>
         </h2>
         <p className="section-sub">
-          Five verified handoffs. Every data point auditable, tamper-proof,
-          instantly retrievable.
+          Transparansi 5 tahap pembuatan pupuk dan media tanam organik asli dari olahan pertanian Desa Jagapura Kulon.
         </p>
       </div>
 

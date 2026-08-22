@@ -2,21 +2,31 @@ import Link from "next/link"
 
 const columns = [
   {
-    title: "Platform",
+    title: "Program & Navigasi",
     links: [
-      "Enterprise Console",
-      "Field Agent App",
-      "API Documentation",
-      "Status Page",
+      { label: "Kenapa PADIKU", href: "#why" },
+      { label: "Proses Produksi", href: "#proses" },
+      { label: "Tentang Kami", href: "#tentang" },
+      { label: "Katalog Produk", href: "#katalog" },
+      { label: "Tanya Jawab", href: "#faq" },
     ],
   },
   {
-    title: "Resources",
-    links: ["EUDR Compliance Guide", "Whitepaper", "Case Studies", "Blog"],
+    title: "Produk Unggulan",
+    links: [
+      { label: "Pupuk Sekam Bakar / Biochar", href: "#katalog" },
+      { label: "Kompos Bio-Organik", href: "#katalog" },
+      { label: "Media Tanam Super", href: "#katalog" },
+      { label: "Beras / Gabah Organik", href: "#katalog" },
+    ],
   },
   {
-    title: "Contact",
-    links: ["hello@panora.farm", "Jakarta, Indonesia", "Privacy Policy", "Terms of Service"],
+    title: "KKM UMC & Kontak",
+    links: [
+      { label: "Desa Jagapura Kulon, Gegesik", href: "#" },
+      { label: "Universitas Muhammadiyah Cirebon", href: "https://umc.ac.id" },
+      { label: "WhatsApp Order Hub", href: "https://wa.me/6285179778898" },
+    ],
   },
 ] as const
 
@@ -25,10 +35,11 @@ export function SiteFooter() {
     <footer>
       <div className="footer-top">
         <div className="footer-brand">
-          <div className="footer-brand-name">Panora</div>
+          <div className="footer-brand-name flex items-center gap-2">
+            <span>🌾</span> PADIKU — Jagapura Kulon
+          </div>
           <p className="footer-brand-desc">
-            First-mile traceability and EUDR compliance infrastructure for
-            global commodity supply chains.
+            Pemberdayaan Masyarakat melalui Agribisnis, Diversifikasi Pangan, dan Ekonomi Sirkular. Desa Jagapura Kulon, Kecamatan Gegesik, Kabupaten Cirebon.
           </p>
         </div>
         <div className="footer-columns">
@@ -36,9 +47,9 @@ export function SiteFooter() {
             <div key={title}>
               <div className="footer-col-title">{title}</div>
               <ul className="footer-links">
-                {links.map((label) => (
+                {links.map(({ label, href }) => (
                   <li key={label}>
-                    <Link href="#">{label}</Link>
+                    <Link href={href}>{label}</Link>
                   </li>
                 ))}
               </ul>
@@ -47,7 +58,9 @@ export function SiteFooter() {
         </div>
       </div>
       <div className="footer-bottom">
-        <span className="footer-copy">© 2026 Panora. All rights reserved.</span>
+        <span className="footer-copy">
+          © 2026 Program PADIKU Desa Jagapura Kulon & KKM 29 Universitas Muhammadiyah Cirebon. All rights reserved.
+        </span>
       </div>
     </footer>
   )
