@@ -1,42 +1,86 @@
-# 🌾 Website Landing Page UMKM Program PADIKU — Desa Jagapura Kulon
+<div align="center">
+  <img src="public/logo-padiku.png" alt="PADIKU Logo" width="100" height="100" />
 
-Website landing page media digitalisasi UMKM berbasis **Program PADIKU** (Pemberdayaan Masyarakat melalui Agribisnis, Diversifikasi Pangan, dan Ekonomi Sirkular) di Desa Jagapura Kulon, Kecamatan Gegesik, Kabupaten Cirebon.
+# Program PADIKU
 
-## 📌 Identitas Program KKM UMC 2026
-- **Nama Mahasiswa**: Andi Nugroho (NIM: 230511179)
-- **Program Studi**: Teknik Informatika, Universitas Muhammadiyah Cirebon (UMC)
-- **Dosen Pembimbing Lapangan**: Ari Yulistianingsih, M.Gz
-- **Lokasi**: Desa Jagapura Kulon, Kecamatan Gegesik, Kabupaten Cirebon, Jawa Barat
-- **Kepala Desa (Kuwu)**: Alwanudin
+Digitalisasi UMKM & Ekonomi Sirkular Desa Jagapura Kulon, Kecamatan Gegesik, Kabupaten Cirebon.
+<br />
+Pemberdayaan Masyarakat melalui Agribisnis, Diversifikasi Pangan, Pupuk Organik Sekam Padi, Kompos Bio-nutrisi, dan Media Tanam Sirkular.
 
----
+[![BUILD](https://img.shields.io/github/actions/workflow/status/andi-nugroho/padikusirkular/ci.yml?branch=main&label=BUILD&style=for-the-badge&logo=github&color=404f1d)](https://github.com/andi-nugroho/padikusirkular/actions)
+[![STARS](https://img.shields.io/github/stars/andi-nugroho/padikusirkular?style=for-the-badge&logo=github&color=8fa36c)](https://github.com/andi-nugroho/padikusirkular/stargazers)
 
-## 🛠️ Fitur Utama Website
-1. **Kenapa PADIKU**: Mengangkat urgensi ekonomi sirkular dari pemanfaatan 448 hektar limbah sekam padi.
-2. **Proses Produksi**: Transparansi 5 tahap pengolahan sekam padi & jerami menjadi pupuk organik, kompos, dan media tanam.
-3. **Tentang Kami**: Profil Program PADIKU, Kelompok Tani (Poktan), dan pendampingan digitalisasi KKM UMC.
-4. **Katalog Produk**: E-katalog digital produk sirkular dengan harga, spesifikasi, dan tombol pemesanan WhatsApp Hub.
-5. **Tanya Jawab**: Panduan praktis penggunaan produk, metode pengiriman, dan grosir bagi konsumen.
-6. **Lokasi & Kontak**: Peta Google Maps interaktif Desa Jagapura Kulon dan kontak pengelola.
+<br />
+<br />
 
----
+[🤝 Code of conduct](CODE_OF_CONDUCT.md) &nbsp;&nbsp;•&nbsp;&nbsp; [👥 Contributing](CONTRIBUTING.md) &nbsp;&nbsp;•&nbsp;&nbsp; [⚖️ MIT license](LICENSE) &nbsp;&nbsp;•&nbsp;&nbsp; [🛡️ Security](SECURITY.md)
 
-## 🚀 Jalankan Secara Lokal
+</div>
+
+![PADIKU Interface](/public/logo-padiku.png)
+
+- **Live System**: [umkmjagapura.web.id](https://umkmjagapura.web.id) (TBD)
+- **Desa**: Jagapura Kulon, Kec. Gegesik, Kab. Cirebon
+
+## Mengapa PADIKU?
+
+- **Ekonomi Sirkular**: Memanfaatkan limbah sekam padi menjadi pupuk organik dan kompos bio-nutrisi berkualitas tinggi.
+- **Pemberdayaan UMKM**: Mendukung pertumbuhan agribisnis lokal dan kemandirian pangan masyarakat desa.
+- **Desain Web Modern**: UI yang estetik, hangat, dan responsif dengan performa tinggi untuk kemudahan akses informasi.
+- **Teknologi Cepat**: Dibangun dengan Next.js App Router (React 19) dan Framer Motion untuk transisi dan animasi halus.
+
+## Tech Stack
+
+- **Framework**: Next.js 16 + React 19 + TypeScript
+- **Styling**: Tailwind CSS v3 + Vanilla CSS
+- **Animasi**: Framer Motion
+- **UI Components**: Radix UI + shadcn/ui
+- **Icons**: Lucide React
+
+## Local Development
+
+### Prerequisites
+
+- Node.js 18+
+- npm (Node Package Manager)
+
+### Install
 
 ```bash
-# Install dependensi
 npm install
+```
 
-# Menjalankan server pengembang Next.js
+### Start development server
+
+```bash
 npm run dev
 ```
 
-Buka [http://localhost:3000](http://localhost:3000) pada peramban web Anda.
+Buka [http://localhost:3000](http://localhost:3000) (atau port yang berjalan).
 
----
+## Scripts
 
-## 🏗️ Build Produksi
+- `npm run dev`: Menjalankan server development
+- `npm run build`: Menjalankan production build
+- `npm run start`: Menjalankan production server
+- `npm run lint`: Menjalankan pengecekan ESLint
+- `npm run type-check`: Menjalankan pengecekan tipe TypeScript
 
-```bash
-npm run build
-```
+## Architecture Overview
+
+- `src/app`: Konfigurasi Next.js App Router dan halaman/layout utama.
+- `src/components/sections`: Komponen antarmuka per-bagian (seperti Navbar, Footer, Hero, dll).
+- `src/components/ui`: Komponen UI modular (Button, dll) dari sistem desain.
+- `public/`: Aset statis berupa gambar dan logo.
+
+## Deployment
+
+Dioptimalkan untuk deployment pada Vercel atau environment Node.js yang mendukung Next.js. Siap untuk pipeline CI/CD otomatis melalui GitHub Actions.
+
+## Contributing
+
+Kami sangat terbuka dengan kontribusi untuk memajukan sistem PADIKU. Silakan buat *Pull Request* atau buka *Issue* baru untuk diskusi lebih lanjut.
+
+## License
+
+MIT © 2026 KKM UMC (Universitas Muhammadiyah Cirebon) & Andi Nugroho.

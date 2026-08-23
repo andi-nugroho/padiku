@@ -13,8 +13,8 @@ const partners = [
 
 const logos = partners.map((partner) => ({
   node: (
-    <span className="proof-logo font-bold text-lg tracking-wide text-white/90 whitespace-nowrap bg-white/10 px-4 py-2 rounded-full border border-white/20">
-      🌾 {partner}
+    <span className="proof-logo flex items-center gap-2 font-bold text-lg tracking-wide text-white/90 whitespace-nowrap bg-white/10 px-4 py-2 rounded-full border border-white/20">
+      <img src="/logo-padiku.png" alt="PADIKU Logo" className="w-5 h-5 object-contain" /> {partner}
     </span>
   ),
   ariaLabel: partner,

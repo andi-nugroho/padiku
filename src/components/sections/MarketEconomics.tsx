@@ -116,18 +116,18 @@ export function MarketEconomics() {
       </div>
 
       <motion.div
-        className="me-card bg-[var(--olive-950)] text-[var(--bone)] p-8 rounded-2xl"
+        className="me-card p-8 rounded-2xl"
         initial={{ opacity: 0, y: 32 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true, margin: "-60px" }}
         transition={{ duration: 0.5 }}
       >
-        <h3 className="text-2xl font-bold mb-4 text-[var(--bone)]">
+        <h3 className="text-2xl font-bold mb-4 text-[var(--olive-950)]">
           Keunggulan Produk Sirkular <em>PADIKU</em>
         </h3>
         <ul className="grid grid-cols-1 md:grid-cols-2 gap-4">
           {features.map((item) => (
-            <li key={item} className="flex items-start gap-3 text-sm text-[var(--bone-dim)]">
+            <li key={item} className="flex items-start gap-3 text-sm text-[var(--stone)]">
               <span className="text-[var(--harvest)] font-bold">✓</span>
               <span>{item}</span>
             </li>
