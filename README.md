@@ -12,6 +12,8 @@ Pemberdayaan Masyarakat melalui Agribisnis, Diversifikasi Pangan, Pupuk Organik 
 
 <br />
 
+</div>
+
 - **Live System**: [umkmjagapura.web.id](https://umkmjagapura.web.id)
 - **Desa**: Jagapura Kulon, Kec. Gegesik, Kab. Cirebon
 
