@@ -12,6 +12,8 @@ Pemberdayaan Masyarakat melalui Agribisnis, Diversifikasi Pangan, Pupuk Organik 
 
 <br />
 
+![PADIKU Preview](public/preview.png)
+
 </div>
 
 - **Live System**: [umkmjagapura.web.id](https://umkmjagapura.web.id)
