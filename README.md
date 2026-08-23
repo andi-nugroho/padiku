@@ -11,15 +11,8 @@ Pemberdayaan Masyarakat melalui Agribisnis, Diversifikasi Pangan, Pupuk Organik 
 [![STARS](https://img.shields.io/github/stars/andi-nugroho/padikusirkular?style=for-the-badge&logo=github&color=8fa36c)](https://github.com/andi-nugroho/padikusirkular/stargazers)
 
 <br />
-<br />
 
-[🤝 Code of conduct](CODE_OF_CONDUCT.md) &nbsp;&nbsp;•&nbsp;&nbsp; [👥 Contributing](CONTRIBUTING.md) &nbsp;&nbsp;•&nbsp;&nbsp; [⚖️ MIT license](LICENSE) &nbsp;&nbsp;•&nbsp;&nbsp; [🛡️ Security](SECURITY.md)
-
-</div>
-
-![PADIKU Interface](/public/logo-padiku.png)
-
-- **Live System**: [umkmjagapura.web.id](https://umkmjagapura.web.id) (TBD)
+- **Live System**: [umkmjagapura.web.id](https://umkmjagapura.web.id)
 - **Desa**: Jagapura Kulon, Kec. Gegesik, Kab. Cirebon
 
 ## Mengapa PADIKU?
