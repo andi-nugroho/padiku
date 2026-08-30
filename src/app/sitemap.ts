@@ -3,11 +3,10 @@ import { MetadataRoute } from 'next';
 export default function sitemap(): MetadataRoute.Sitemap {
   return [
     {
-      url: 'https://www.umkmjagapura.web.id',
+      url: 'https://umkmjagapura.web.id',
       lastModified: new Date(),
-      changeFrequency: 'yearly',
-      priority: 1,
+      changeFrequency: 'weekly',
+      priority: 1.0,
     },
-    // Tambahkan URL halaman statis maupun dinamis lainnya di sini
   ];
 }
