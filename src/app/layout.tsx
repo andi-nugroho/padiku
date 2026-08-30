@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Hanken_Grotesk } from "next/font/google";
+import Script from "next/script";
 import "./globals.css";
-
 const hanken = Hanken_Grotesk({
   weight: ["300", "400", "500", "600", "700"],
   subsets: ["latin"],
@@ -85,6 +85,11 @@ export default function RootLayout({
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
+        <Script 
+          defer 
+          src="https://cloud.umami.is/script.js" 
+          data-website-id="5a7acdf1-1d79-4c2c-890a-8c44afd0042a" 
         />
         {children}
       </body>
