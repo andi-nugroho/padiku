@@ -46,6 +46,9 @@ export const metadata: Metadata = {
       "Platform resmi digitalisasi UMKM Program PADIKU di Desa Jagapura Kulon, Cirebon. Temukan pupuk organik sekam, kompos, dan produk agribisnis berkualitas tinggi.",
     images: ["/images/og-padiku.jpg"],
   },
+  verification: {
+    google: "WTj1vNn1l05IWJ1I_n_1MIfv8JBjlgiL8r3g5o2xQdY",
+  },
 };
 
 export default function RootLayout({
