@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Hanken_Grotesk } from "next/font/google";
 import Script from "next/script";
 import "./globals.css";
@@ -9,10 +9,15 @@ const hanken = Hanken_Grotesk({
   display: "swap",
 });
 
+export const viewport: Viewport = {
+  themeColor: "#ffffff",
+};
+
 export const metadata: Metadata = {
-  title: "PADIKU - Digitalisasi UMKM & Produk Sirkular Desa Jagapura Kulon",
+  metadataBase: new URL("https://umkmjagapura.web.id"),
+  title: "PADIKU - Digitalisasi UMKM Desa Jagapura Kulon",
   description:
-    "Platform resmi digitalisasi UMKM Program PADIKU di Desa Jagapura Kulon, Cirebon. Temukan pupuk organik sekam, kompos, dan produk agribisnis berkualitas tinggi dari desa kami.",
+    "Platform resmi digitalisasi UMKM Program PADIKU di Desa Jagapura Kulon, Cirebon.",
   keywords: [
     "UMKM Desa Jagapura Kulon",
     "Pupuk Organik Sekam Cirebon",
@@ -22,18 +27,25 @@ export const metadata: Metadata = {
   ],
   authors: [{ name: "Tim KKM UMC 2026 - Desa Jagapura Kulon" }],
   creator: "Tim PADIKU",
+  alternates: {
+    canonical: "https://umkmjagapura.web.id",
+  },
+  icons: {
+    icon: "/favicon.ico",
+    apple: "/apple-touch-icon.png",
+  },
   openGraph: {
-    title: "PADIKU - Digitalisasi UMKM & Produk Sirkular Desa Jagapura Kulon",
+    title: "PADIKU - Digitalisasi UMKM Desa Jagapura Kulon",
     description:
-      "Platform resmi digitalisasi UMKM Program PADIKU di Desa Jagapura Kulon, Cirebon. Temukan pupuk organik sekam, kompos, dan produk agribisnis berkualitas tinggi.",
-    url: "https://www.umkmjagapura.web.id",
+      "Platform resmi digitalisasi UMKM Program PADIKU di Desa Jagapura Kulon, Cirebon.",
+    url: "https://umkmjagapura.web.id",
     siteName: "PADIKU",
     images: [
       {
-        url: "/images/og-padiku.jpg", // Make sure to add this image to the public/images folder
+        url: "/og-image.png",
         width: 1200,
         height: 630,
-        alt: "PADIKU - Digitalisasi UMKM & Produk Sirkular",
+        alt: "PADIKU - Digitalisasi UMKM & Produk Desa Jagapura Kulon",
       },
     ],
     locale: "id_ID",
@@ -41,10 +53,10 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "PADIKU - Digitalisasi UMKM & Produk Sirkular Desa Jagapura Kulon",
+    title: "PADIKU - Digitalisasi UMKM Desa Jagapura Kulon",
     description:
-      "Platform resmi digitalisasi UMKM Program PADIKU di Desa Jagapura Kulon, Cirebon. Temukan pupuk organik sekam, kompos, dan produk agribisnis berkualitas tinggi.",
-    images: ["/images/og-padiku.jpg"],
+      "Platform resmi digitalisasi UMKM Program PADIKU di Desa Jagapura Kulon, Cirebon.",
+    images: ["/og-image.png"],
   },
   verification: {
     google: "WTj1vNn1l05IWJ1I_n_1MIfv8JBjlgiL8r3g5o2xQdY",
