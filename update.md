@@ -1,9 +1,8 @@
-Tolong buatkan implementasi arsitektur hibrida untuk project Next.js App Router UMKM PADIKU dengan ketentuan berikut:
+Tolong lakukan pembaruan menyeluruh pada konten teks di seluruh *section* website PADIKU (seperti halaman utama, section "Tentang Kami", "Kenapa PADIKU", dan "Proses Produksi") agar selaras dengan fokus baru program **PADIKU Sirkular** yang menonjolkan produk-produk UMKM lokal (**Grejeg**, **Sambel Garing**, dan **Gonjing**), bukan lagi fokus pada pupuk sekam/pertanian.
 
-1. **Pertahankan Homepage:** Biarkan section-section utama tetap ada di halaman utama (`src/app/page.tsx`) dengan ringkasan yang interaktif (seperti *Kenapa PADIKU*, *Proses Produksi*, cuplikan *Katalog Produk*, dan *Tanya Jawab*). Tambahkan *call-toaction button* di setiap ringkasan section yang mengarah ke halaman *routing* terpisah.
-2. **Buat Halaman Routing Terpisah:**
-   - Buat folder `src/app/katalog/page.tsx` untuk menampilkan halaman katalog produk UMKM secara lengkap (grid produk, kategori, dll).
-   - Buat folder `src/app/tentang-kami/page.tsx` atau halaman *routing* pendukung lainnya jika diperlukan untuk ekspansi informasi.
-3. **Navigasi & Header/Footer:** Pastikan menu navigasi di atas (*Navbar*) terhubung dengan benar, di mana sebagian menu melakukan *smooth scroll* ke section di homepage dan sebagian lagi (seperti Katalog Produk) mengarah langsung ke URL rute terpisah (`/katalog`).
+Ketentuan pembaruan:
+1. **Pembersihan Konten Lama:** Hapus atau ubah teks, narasi, dan salinan kalimat (*copywriting*) yang masih membahas tentang pupuk organik sekam, kompos, atau agribisnis pertanian.
+2. **Narasi Baru Sirkular UMKM:** Ubah narasinya agar berfokus pada pemberdayaan ekonomi ibu rumah tangga di Desa Jagapura Kulon melalui produksi makanan khas lokal (Grejeg, Sambel Garing, dan Gonjing).
+3. **Asset & Gambar:** Biarkan seluruh tag gambar/asset yang sudah ada tetap seperti semula tanpa mengubah atau mengganti file gambarnya.
 
-Pastikan struktur komponen modular, menggunakan TypeScript yang bersih, tidak ada *broken link*, dan makes no mistakes!
+Pastikan implementasi menggunakan TypeScript yang bersih, tidak ada teks lama yang tertinggal di komponen manapun, dan makes no mistakes!

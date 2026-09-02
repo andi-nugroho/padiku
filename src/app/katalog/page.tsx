@@ -9,47 +9,38 @@ import { ScrollProgress } from "@/components/ui/scroll-progress"
 
 const products = [
   {
-    name: "Pupuk Sekam Bakar / Biochar Organik",
-    price: "Rp 15.000",
-    unit: "/ Karung 10 kg",
-    desc: "Sekam padi hasil pembakaran terkontrol (pyrolysis). Berfungsi meningkatkan porositas, menyimpan kelembapan air, serta menetralisir tingkat keasaman (pH) tanah persawahan & perkebunan.",
-    tag: "Biochar Porositas Tinggi",
+    name: "Grejeg",
+    price: "Harga Bervariasi",
+    unit: "",
+    desc: "Makanan khas Jagapura Kulon yang diproduksi dengan berbagai jenis, menjadi ikon pemberdayaan ekonomi ibu rumah tangga di Jagapura.",
+    tag: "Makanan Khas",
     image: "/padi.jpg",
-    waText: "Halo%20PADIKU%20Jagapura%20Kulon%2C%20saya%20ingin%20memesan%20Pupuk%20Sekam%20Bakar%20/%20Biochar%20Organik.",
+    waText: "Halo%20PADIKU%20Jagapura%20Kulon%2C%20saya%20ingin%20memesan%20Grejeg.",
   },
   {
-    name: "Pupuk Kompos Bio-Organik PADIKU",
-    price: "Rp 20.000",
-    unit: "/ Karung 10 kg",
-    desc: "Kompos olahan limbah pertanian matang hasil fermentasi komposter portable dengan dekomposer unggul. Memiliki kandungan Nitrogen, Phosfor, dan Kalium alami untuk mempercepat pertumbuhan tanaman.",
-    tag: "Kaya Nutrisi & Mikroba",
+    name: "Sambel Garing",
+    price: "Harga Bervariasi",
+    unit: "",
+    desc: "Produk sambal khas olahan rumahan yang gurih dan nikmat (produksi Ibu Syahrini).",
+    tag: "Olahan Rumahan",
     image: "/coffee.jpg",
-    waText: "Halo%20PADIKU%20Jagapura%20Kulon%2C%20saya%20ingin%20memesan%20Pupuk%20Kompos%20Bio-Organik.",
+    waText: "Halo%20PADIKU%20Jagapura%20Kulon%2C%20saya%20ingin%20memesan%20Sambel%20Garing.",
   },
   {
-    name: "Media Tanam Super Olahan Sekam",
-    price: "Rp 18.000",
-    unit: "/ Karung 10 kg",
-    desc: "Formulasi racikan siap pakai yang menggabungkan sekam lapuk, kompos bio-organik, dan tanah subur. Sangat cocok untuk tanaman hortikultura, buah-buahan, sayuran, dan tanaman hias pot.",
-    tag: "Formulasi Siap Pakai",
+    name: "Gonjing",
+    price: "Harga Bervariasi",
+    unit: "",
+    desc: "Kue tradisional yang bergizi, kaya karbohidrat dan protein, cocok dinikmati dengan minuman hangat di atas daun pisang dengan berbagai varian topping.",
+    tag: "Kue Tradisional",
     image: "/chili.jpg",
-    waText: "Halo%20PADIKU%20Jagapura%20Kulon%2C%20saya%20ingin%20memesan%20Media%20Tanam%20Super%20Olahan%20Sekam.",
-  },
-  {
-    name: "Gabah & Beras Organik Jagapura",
-    price: "Rp 14.000",
-    unit: "/ kg",
-    desc: "Beras olahan segar hasil panen persawahan seluas 448 hektar Desa Jagapura Kulon. Diproses secara alami, minim pestisida sintetik, serta memiliki aroma khas pulen alami.",
-    tag: "Panen Asli 448 Ha Sawah",
-    image: "/hero2.jpg",
-    waText: "Halo%20PADIKU%20Jagapura%20Kulon%2C%20saya%20ingin%20memesan%20Beras%20/%20Gabah%20Organik.",
+    waText: "Halo%20PADIKU%20Jagapura%20Kulon%2C%20saya%20ingin%20memesan%20Gonjing.",
   },
 ]
 
 const features = [
-  "Bahan baku 100% dari hasil olahan limbah pertanian Desa Jagapura Kulon",
-  "Harga terjangkau langsung dari tangan Kelompok Tani (Poktan) tanpa perantara",
-  "Melayani pembelian eceran ritel maupun pesanan grosir/partai besar",
+  "Diproduksi langsung oleh ibu rumah tangga dan pelaku UMKM Desa Jagapura Kulon",
+  "Cita rasa autentik khas daerah yang dijaga kualitasnya",
+  "Mendukung pemberdayaan ekonomi lokal desa",
   "Pemesanan langsung terintegrasi ke WhatsApp Pengelola UMKM & Poktan",
 ]
 
@@ -65,7 +56,7 @@ export default function KatalogPage() {
             Etalase Produk Sirkular <em>PADIKU Desa.</em>
           </h2>
           <p className="section-sub">
-            Pilihan pupuk organik, kompos bio-nutrisi, dan media tanam unggulan berkualitas tinggi untuk pertanian dan kebun Anda.
+            Pilihan produk UMKM unggulan khas Jagapura Kulon yang lezat, bergizi, dan memberdayakan ekonomi lokal.
           </p>
         </div>
 
