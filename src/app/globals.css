@@ -59,7 +59,7 @@ body {
   font-family: var(--sans);
   background: var(--bone);
   color: var(--olive-950);
-  overflow-x: hidden;
+  overflow-x: clip;
   font-feature-settings: "ss01";
 }
 
