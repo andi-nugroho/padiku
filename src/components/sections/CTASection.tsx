@@ -5,7 +5,7 @@ import { SplitText } from "@/components/ui/split-text"
 import Magnet from "@/components/reactbits/Magnet"
 
 const WA_URL =
-  "https://wa.me/6285179778898?text=Halo%20Pengelola%20PADIKU%20Desa%20Jagapura%20Kulon%2C%20saya%20ingin%20berkonsultasi%20mengenai%20pemesanan%20produk%20pupuk%20dan%20media%20tanam."
+  "https://wa.me/6285179778898?text=Halo%20Pengelola%20PADIKU%20Desa%20Jagapura%20Kulon%2C%20saya%20ingin%20berkonsultasi%20mengenai%20pemesanan%20produk%20makanan%20khas%20lokal."
 const MAPS_URL =
   "https://maps.google.com/?q=Desa+Jagapura+Kulon+Kecamatan+Gegesik+Kabupaten+Cirebon"
 
@@ -18,7 +18,7 @@ export function CTASection() {
           <SplitText text="Kunjungi Lokasi & Pesan Produk PADIKU" />
         </h2>
         <p className="cta-final-sub mb-8">
-          Sekretariat Program PADIKU & Kelompok Tani Desa Jagapura Kulon, Kecamatan Gegesik, Kabupaten Cirebon, Jawa Barat.
+          Sentra UMKM PADIKU & Produksi Makanan Khas Desa Jagapura Kulon, Kecamatan Gegesik, Kabupaten Cirebon, Jawa Barat.
         </p>
 
         {/* Embedded Google Maps */}

@@ -8,7 +8,7 @@ const partners = [
   "Universitas Muhammadiyah Cirebon",
   "KKM 29 Jagapura Kulon",
   "Pemerintah Desa Jagapura Kulon",
-  "Kelompok Tani (Poktan) Desa",
+  "Kelompok UMKM & Ibu Rumah Tangga",
 ]
 
 const logos = partners.map((partner) => ({

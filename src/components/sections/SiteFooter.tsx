@@ -14,10 +14,10 @@ const columns = [
   {
     title: "Produk Unggulan",
     links: [
-      { label: "Pupuk Sekam Bakar / Biochar", href: "#katalog" },
-      { label: "Kompos Bio-Organik", href: "#katalog" },
-      { label: "Media Tanam Super", href: "#katalog" },
-      { label: "Beras / Gabah Organik", href: "#katalog" },
+      { label: "Grejeg (Khas Jagapura)", href: "#katalog" },
+      { label: "Sambel Garing", href: "#katalog" },
+      { label: "Gonjing Tradisional", href: "#katalog" },
+      { label: "Olahan Rumahan Lainnya", href: "#katalog" },
     ],
   },
   {

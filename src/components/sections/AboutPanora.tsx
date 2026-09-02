@@ -17,20 +17,20 @@ export function AboutPanora() {
           <div className="section-label">Kenapa PADIKU</div>
 
           <h2 className="statement">
-            <ScrollReveal text="Lahan persawahan seluas 448 hektar di Desa Jagapura Kulon menghasilkan sekam padi yang sangat melimpah." />
+            <ScrollReveal text="Desa Jagapura Kulon memiliki potensi kuliner lokal yang luar biasa dan diwariskan turun-temurun." />
           </h2>
 
           <div>
             <h2 className="statement statement--sage">
-              <ScrollReveal text="Namun, tanpa pengolahan sirkular, limbah pertanian ini kerap dibakar dan mencemari kualitas udara persawahan." />
+              <ScrollReveal text="Namun, potensi ini belum digarap optimal dan para pelaku UMKM desa membutuhkan wadah pemberdayaan ekonomi yang terintegrasi." />
             </h2>
             <p className="statement-note">
-              Urgensi Ekonomi Sirkular: Mengubah limbah berlimpah menjadi pupuk organik dan media tanam bernilai ekonomi tinggi yang menyuburkan kembali tanah desa.
+              Urgensi Ekonomi Sirkular: Mengoptimalkan sumber daya lokal menjadi produk bernilai jual tinggi (Grejeg, Sambel Garing, Gonjing) untuk kemandirian ekonomi keluarga.
             </p>
           </div>
 
           <h2 className="statement">
-            <ScrollReveal text="Bagaimana jika setiap karung sekam diolah menjadi nutrisi tanah dan sumber pendapatan baru petani?" />
+            <ScrollReveal text="Bagaimana jika setiap resep warisan diolah menjadi produk unggulan UMKM yang memberdayakan masyarakat desa?" />
           </h2>
         </div>
       </section>
@@ -41,7 +41,7 @@ export function AboutPanora() {
             <SplitText text="Kami menghadirkan" /> <em><SplitText text="Ekonomi Sirkular Desa." delay={0.3} /></em>
           </h2>
           <p className="better-way-text">
-            <strong>Program PADIKU</strong> (Pemberdayaan Masyarakat melalui Agribisnis, Diversifikasi Pangan, dan Ekonomi Sirkular) lahir dari inisiatif kelompok tani Desa Jagapura Kulon bersama pendampingan KKM Universitas Muhammadiyah Cirebon. Kami memproses limbah sekam padi menjadi biochar sekam bakar, kompos bio-organik, dan media tanam unggulan secara transparan, ramah lingkungan, dan memberdayakan ekonomi lokal.
+            <strong>Program PADIKU</strong> (Pemberdayaan Masyarakat melalui Agribisnis, Diversifikasi Pangan, dan Ekonomi Sirkular) lahir dari inisiatif UMKM Desa Jagapura Kulon bersama pendampingan KKM Universitas Muhammadiyah Cirebon. Kami memproduksi makanan khas lokal seperti Grejeg, Sambel Garing, dan Gonjing secara higienis, menjaga cita rasa autentik, dan memberdayakan ekonomi masyarakat setempat.
           </p>
           <Link href="#proses" className="text-btn">
             Lihat Alur Proses Produksi

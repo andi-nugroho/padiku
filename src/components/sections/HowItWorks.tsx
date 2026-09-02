@@ -6,36 +6,36 @@ import Image from "next/image"
 const steps = [
   {
     n: "01",
-    title: "Pengumpulan Sekam Padi",
-    desc: "Pengumpulan limbah sekam padi segar secara terorganisir dari fasilitas penggilingan padi dan 448 hektar lahan persawahan petani Desa Jagapura Kulon.",
+    title: "Pemilihan Bahan Baku Lokal",
+    desc: "Bahan baku berkualitas diperoleh langsung dari pasar dan produsen lokal di Desa Jagapura Kulon, memastikan kesegaran dan mendukung ekonomi berputar di desa.",
     tag: "Bahan Baku 100% Lokal Desa",
     image: "/hero.jpg",
   },
   {
     n: "02",
-    title: "Karbonasi & Pembakaran Biochar",
-    desc: "Sekam padi diproses melalui teknik pembakaran tak sempurna (pyrolysis sederhana) untuk memproduksi sekam bakar/biochar yang kaya unsur hara dan porositas tinggi.",
-    tag: "Sekam Bakar / Biochar Organik",
+    title: "Proses Produksi Higienis",
+    desc: "Produksi Grejeg, Sambel Garing, dan Gonjing dilakukan oleh kelompok UMKM desa terlatih menggunakan resep tradisional dengan standar kebersihan tinggi.",
+    tag: "Produksi Ibu Rumah Tangga",
     image: "/padi.jpg",
   },
   {
     n: "03",
-    title: "Fermentasi Kompos Bio-Organik",
-    desc: "Pencampuran sekam dengan mikroorganisme pengurai (dekomposer) dalam wadah komposter portable hingga matang sempurna dan kaya nutrisi makro/mikro.",
-    tag: "Fermentasi Komposter Portable",
+    title: "Pengemasan & Quality Control",
+    desc: "Setiap produk yang selesai dimasak akan dikemas secara aman dan menarik, lalu melewati proses quality control untuk menjaga cita rasa dan ketahanan produk.",
+    tag: "Aman & Cita Rasa Terjaga",
     image: "/coffee.jpg",
   },
   {
     n: "04",
-    title: "Pengayakan & Formulasi Media Tanam",
-    desc: "Proses pengayakan halus dan formulasi racikan media tanam (sekam lapuk, kompos, & tanah humus) dengan standar nutrisi seimbang untuk hortikultura.",
-    tag: "Uji Kualitas & Formulasi Seimbang",
+    title: "Digitalisasi E-Katalog",
+    desc: "Produk yang siap jual didata ke dalam sistem E-Katalog digital PADIKU untuk memperluas jangkauan pasar dan mempermudah akses informasi bagi pembeli.",
+    tag: "Pemasaran Digital Terintegrasi",
     image: "/hero1.jpg",
   },
   {
     n: "05",
-    title: "Pengemasan & E-Katalog Digital",
-    desc: "Produk dikemas higienis dalam karung tahan lembap, diberi sertifikasi kelayakan kelompok tani, dan dipasarkan secara digital via e-katalog WhatsApp Hub.",
+    title: "Pemesanan via Hub WhatsApp",
+    desc: "Pembeli dapat langsung memesan produk favorit mereka melalui WhatsApp Hub yang dikelola dengan responsif oleh pengelola UMKM desa.",
     tag: "Siap Distribusi & Pesan WA",
     image: "/hero3.jpg",
   },
@@ -66,10 +66,10 @@ export function HowItWorks() {
       <div className="process-header">
         <div className="section-label">Proses Produksi</div>
         <h2 className="section-title">
-          Dari limbah sawah menjadi <em>nutrisi tanah unggulan.</em>
+          Dari resep warisan menjadi <em>produk unggulan UMKM.</em>
         </h2>
         <p className="section-sub">
-          Transparansi 5 tahap pembuatan pupuk dan media tanam organik asli dari olahan pertanian Desa Jagapura Kulon.
+          Transparansi 5 tahap produksi makanan khas unggulan yang memberdayakan masyarakat Desa Jagapura Kulon.
         </p>
       </div>
 

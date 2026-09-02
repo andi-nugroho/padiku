@@ -46,10 +46,10 @@ export function Hero({ ready }: { ready: boolean }) {
 
       <div className="hero-row">
         <motion.p className="hero-description" {...fadeUp(0.55, ready)}>
-          Program PADIKU mengoptimalkan limbah sekam padi dari 448 hektar persawahan
+          Program PADIKU memberdayakan ekonomi masyarakat
           di Desa Jagapura Kulon, Kecamatan Gegesik, Kabupaten Cirebon.
-          Menghadirkan pupuk organik sekam, kompos bio-nutrisi, dan media tanam
-          sirkular ramah lingkungan.
+          Menghadirkan makanan khas lokal unggulan seperti Grejeg, Sambel Garing, 
+          dan Gonjing yang diproduksi secara sirkular dan berkelanjutan.
         </motion.p>
 
         <motion.div className="hero-buttons" {...fadeUp(0.65, ready)}>
@@ -104,7 +104,7 @@ export function Hero({ ready }: { ready: boolean }) {
           ))}
         </motion.div>
         <div className="hero-media-caption">
-          Kawasan Persawahan & Pengolahan Sekam Padi seluas 448 Ha, Desa Jagapura Kulon, Kec. Gegesik, Kab. Cirebon
+          Kawasan Desa Jagapura Kulon, Kec. Gegesik, Kab. Cirebon - Sentra Produksi Makanan Khas Lokal UMKM
         </div>
       </motion.div>
     </section>

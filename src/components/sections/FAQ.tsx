@@ -7,32 +7,32 @@ const faqItems = [
   {
     question: "Apa itu Program PADIKU di Desa Jagapura Kulon?",
     answer:
-      "Program PADIKU (Pemberdayaan Masyarakat melalui Agribisnis, Diversifikasi Pangan, dan Ekonomi Sirkular) adalah inisiatif pengolahan limbah sekam padi dari 448 hektar persawahan Desa Jagapura Kulon, Kecamatan Gegesik, Cirebon menjadi pupuk organik, kompos bio-nutrisi, dan media tanam bernilai ekonomi tinggi.",
+      "Program PADIKU (Pemberdayaan Masyarakat melalui Agribisnis, Diversifikasi Pangan, dan Ekonomi Sirkular) kini berfokus pada pemberdayaan masyarakat di Desa Jagapura Kulon melalui produksi makanan khas lokal seperti Grejeg, Sambel Garing, dan Gonjing yang bernilai ekonomi tinggi.",
   },
   {
     question: "Bagaimana cara melakukan pemesanan produk?",
     answer:
-      "Pemesanan sangat praktis! Anda dapat mengklik tombol 'Pesan via WhatsApp' pada katalog produk yang diinginkan. Sistem akan mengarahkan Anda ke akun WhatsApp resmi Pengelola UMKM & Poktan Desa Jagapura Kulon untuk mengonfirmasi jumlah pesanan dan alamat pengiriman.",
+      "Pemesanan sangat praktis! Anda dapat mengklik tombol 'Pesan via WhatsApp' pada katalog produk yang diinginkan. Sistem akan mengarahkan Anda ke akun WhatsApp resmi Pengelola UMKM Desa Jagapura Kulon untuk mengonfirmasi jumlah pesanan dan alamat pengiriman.",
   },
   {
-    question: "Apakah pupuk sekam bakar dan kompos cocok untuk semua tanaman?",
+    question: "Apakah produk makanan yang dijual tahan lama untuk dikirim ke luar kota?",
     answer:
-      "Sangat cocok! Pupuk sekam bakar (biochar) berfungsi melonggarkan struktur tanah dan menetralisir keasaman pH, sedangkan pupuk kompos bio-organik memberikan nutrisi makro/mikro alami. Keduanya cocok untuk tanaman persawahan, hortikultura (cabai, tomat, sayur), tanaman buah, dan tanaman hias pot.",
+      "Ya, produk olahan seperti Grejeg dan Sambel Garing dikemas secara higienis dan kedap udara sehingga mampu bertahan lama dan aman untuk dikirim ke berbagai daerah menggunakan ekspedisi.",
   },
   {
     question: "Apakah melayani pemesanan grosir atau partai besar?",
     answer:
-      "Ya, kami melayani baik pembelian eceran ritel maupun pemesanan grosir/partai besar untuk kelompok tani, perkebunan, atau distributor pupuk. Untuk pemesanan jumlah besar, kami menyediakan harga khusus dan pengiriman langsung via kargo armada desa.",
+      "Ya, kami melayani baik pembelian eceran ritel maupun pemesanan partai besar untuk acara, hajatan, atau agen reseller. Untuk pemesanan jumlah besar, kami menyediakan harga khusus.",
   },
   {
     question: "Bagaimana sistem pengiriman dan metode pembayaran?",
     answer:
-      "Pengiriman dapat dilakukan melalui armada truk/pickup lokal desa untuk area Cirebon & sekitarnya, serta jasa pengiriman kargo darat untuk luar daerah. Pembayaran dapat dilakukan via transfer bank resmi pengelola atau metode Cash on Delivery (COD) sesuai kesepakatan.",
+      "Pengiriman dapat dilakukan melalui layanan logistik (JNE, J&T, dll) untuk area Cirebon maupun luar daerah. Pembayaran dapat dilakukan via transfer bank resmi pengelola atau metode Cash on Delivery (COD) sesuai kesepakatan dan ketersediaan layanan pengiriman.",
   },
   {
     question: "Siapa pengelola program ini dan bagaimana bentuk pendampingannya?",
     answer:
-      "Program ini dikelola langsung oleh Kelompok Tani (Poktan) dan UMKM Desa Jagapura Kulon dengan pendampingan digitalisasi oleh Mahasiswa Teknik Informatika Universitas Muhammadiyah Cirebon (Andi Nugroho - NIM 230511179, DPL: Ari Yulistianingsih, M.Gz) melalui kegiatan KKM UMC 2026.",
+      "Program ini dikelola langsung oleh kelompok UMKM Desa Jagapura Kulon dengan pendampingan digitalisasi E-Katalog oleh Mahasiswa Teknik Informatika Universitas Muhammadiyah Cirebon (Andi Nugroho - NIM 230511179, DPL: Ari Yulistianingsih, M.Gz) melalui kegiatan KKM UMC 2026.",
   },
 ]
 

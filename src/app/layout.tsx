@@ -20,10 +20,10 @@ export const metadata: Metadata = {
     "Platform resmi digitalisasi UMKM Program PADIKU di Desa Jagapura Kulon, Cirebon.",
   keywords: [
     "UMKM Desa Jagapura Kulon",
-    "Pupuk Organik Sekam Cirebon",
-    "Agribisnis Gegesik",
+    "Makanan Khas Cirebon",
+    "Pemberdayaan Perempuan Gegesik",
     "Ekonomi Sirkular PADIKU",
-    "Produk Pertanian Cirebon",
+    "Produk Kuliner Lokal",
   ],
   authors: [{ name: "Tim KKM UMC 2026 - Desa Jagapura Kulon" }],
   creator: "Tim PADIKU",

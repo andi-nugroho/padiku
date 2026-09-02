@@ -8,7 +8,7 @@ const products = [
     name: "Grejeg",
     price: "Harga Bervariasi",
     unit: "",
-    desc: "Makanan khas Jagapura Kulon yang diproduksi dengan berbagai jenis, menjadi ikon pemberdayaan ekonomi ibu rumah tangga di Jagapura.",
+    desc: "Makanan khas Jagapura Kulon yang diproduksi dengan berbagai jenis, menjadi ikon pemberdayaan ekonomi masyarakat di Jagapura.",
     tag: "Makanan Khas",
     image: "/padi.jpg",
     waText: "Halo%20PADIKU%20Jagapura%20Kulon%2C%20saya%20ingin%20memesan%20Grejeg.",
@@ -34,7 +34,7 @@ const products = [
 ]
 
 const features = [
-  "Diproduksi langsung oleh ibu rumah tangga dan pelaku UMKM Desa Jagapura Kulon",
+  "Diproduksi langsung oleh pelaku UMKM Desa Jagapura Kulon",
   "Cita rasa autentik khas daerah yang dijaga kualitasnya",
   "Mendukung pemberdayaan ekonomi lokal desa",
   "Pemesanan langsung terintegrasi ke WhatsApp Pengelola UMKM & Poktan",

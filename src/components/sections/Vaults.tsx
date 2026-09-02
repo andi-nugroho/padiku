@@ -11,20 +11,20 @@ const pillars = [
   {
     name: "Pilar 01",
     title: "Program PADIKU Desa",
-    desc: "Pemberdayaan Masyarakat melalui Agribisnis, Diversifikasi Pangan, dan Ekonomi Sirkular di Desa Jagapura Kulon, Kecamatan Gegesik, Cirebon. Mengoptimalkan potensi pertanian desa secara berkelanjutan.",
+    desc: "Pemberdayaan Masyarakat melalui Agribisnis, Diversifikasi Pangan, dan Ekonomi Sirkular di Desa Jagapura Kulon, Kecamatan Gegesik, Cirebon. Mengoptimalkan potensi kuliner desa secara berkelanjutan.",
     meta: [
-      { label: "Luas Persawahan", val: "448 Hektar" },
-      { label: "Komoditas", val: "Padi & Sekam Organik" },
+      { label: "Fokus Utama", val: "Ekonomi Sirkular" },
+      { label: "Komoditas", val: "Makanan Khas Lokal" },
     ],
     image: "/chili.jpg",
   },
   {
     name: "Pilar 02",
-    title: "Kelompok Tani (Poktan)",
-    desc: "Wadah kolaborasi para petani lokal dan pengelola UMKM desa dalam memproduksi pupuk organik sekam bakar, kompos bio-nutrisi, dan media tanam sirkular ramah lingkungan.",
+    title: "Sentra Produksi UMKM",
+    desc: "Wadah kolaborasi para pelaku UMKM dan masyarakat desa dalam memproduksi makanan khas seperti Grejeg, Sambel Garing, dan Gonjing.",
     meta: [
-      { label: "Pengelola", val: "Poktan Jagapura Kulon" },
-      { label: "Produk Utama", val: "Pupuk & Media Tanam" },
+      { label: "Pengelola", val: "UMKM Jagapura Kulon" },
+      { label: "Produk Utama", val: "Grejeg, Sambel, Gonjing" },
     ],
     image: "/coffee.jpg",
   },
@@ -46,10 +46,10 @@ export function Vaults() {
       <div className="vault-mobile-header">
         <div className="section-label">Tentang Kami</div>
         <h2 className="section-title">
-          Sinergi Petani Desa & <em>Digitalisasi UMC.</em>
+          Sinergi UMKM Desa & <em>Digitalisasi UMC.</em>
         </h2>
         <p className="section-sub">
-          Mengenal lebih dekat profil Program PADIKU, peran aktif Kelompok Tani Desa Jagapura Kulon, dan pendampingan digitalisasi KKM UMC 2026.
+          Mengenal lebih dekat profil Program PADIKU, peran aktif pelaku UMKM Desa Jagapura Kulon, dan pendampingan digitalisasi KKM UMC 2026.
         </p>
       </div>
 
