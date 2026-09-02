@@ -1,7 +1,9 @@
 "use client"
 
 import Image from "next/image"
+import Link from "next/link"
 import { motion } from "framer-motion"
+import { Button } from "@/components/ui/button"
 import GlareHover from "@/components/reactbits/GlareHover"
 import { Parallax } from "@/components/ui/parallax"
 
@@ -51,8 +53,8 @@ export function Vaults() {
         </p>
       </div>
 
-      <div className="vault-mobile-list">
-        {pillars.map((vault, i) => (
+      <div className="flex justify-center max-w-xl mx-auto">
+        {pillars.slice(0, 1).map((vault, i) => (
           <motion.div
             key={vault.title}
             className="vault-mobile-card"
@@ -99,6 +101,18 @@ export function Vaults() {
             </div>
           </motion.div>
         ))}
+      </div>
+
+      <div className="flex justify-center mt-12">
+        <Button variant="hero-cta" className="gap-2 px-8 py-6 text-lg rounded-full" asChild>
+          <Link href="/tentang-kami">
+            <span>Pelajari Lebih Lanjut</span>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M5 12H19" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+              <path d="M13 6L19 12L13 18" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+            </svg>
+          </Link>
+        </Button>
       </div>
     </section>
   )

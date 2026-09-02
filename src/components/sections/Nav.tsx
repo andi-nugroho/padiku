@@ -6,11 +6,11 @@ import { motion, AnimatePresence } from "framer-motion"
 import { Button } from "@/components/ui/button"
 
 const links = [
-  { label: "Kenapa PADIKU", href: "#why" },
-  { label: "Proses Produksi", href: "#proses" },
-  { label: "Tentang Kami", href: "#tentang" },
-  { label: "Katalog Produk", href: "#katalog" },
-  { label: "Tanya Jawab", href: "#faq" },
+  { label: "Kenapa PADIKU", href: "/#why" },
+  { label: "Proses Produksi", href: "/#proses" },
+  { label: "Tentang Kami", href: "/tentang-kami" },
+  { label: "Katalog Produk", href: "/katalog" },
+  { label: "Tanya Jawab", href: "/#faq" },
 ] as const
 
 const WA_URL =
@@ -28,12 +28,12 @@ export function Nav() {
         className="site-nav"
       >
         <div className="nav-left relative z-[110]">
-          <Link href="/" onClick={() => setIsOpen(false)} className="nav-logo flex items-center gap-3 no-underline">
-            <div className="flex items-center justify-center w-12 h-12 rounded-lg overflow-hidden">
+          <Link href="/" onClick={() => setIsOpen(false)} className="nav-logo flex items-center gap-1 no-underline">
+            <div className="flex items-center justify-center w-14 h-14 rounded-lg overflow-hidden">
               <img src="/logo-padiku.png" alt="PADIKU" className="w-full h-full object-contain" />
             </div>
             <div className="flex flex-col">
-              <span className="text-lg font-bold tracking-tight text-[var(--olive-950)] leading-none">
+              <span className="text-[20px] font-bold tracking-tight text-[var(--olive-950)] leading-none">
                 PADIKU
               </span>
               <span className="text-[10px] font-semibold text-[var(--stone)] uppercase tracking-wider mt-0.5">
