@@ -21,10 +21,10 @@ const columns = [
     ],
   },
   {
-    title: "KKM UMC & Kontak",
+    title: "KKM 29 UMC & Kontak",
     links: [
       { label: "Desa Jagapura Kulon, Gegesik", href: "#" },
-      { label: "Universitas Muhammadiyah Cirebon", href: "https://umc.ac.id" },
+      { label: "KKM 29 Jagapura Kulon", href: "https://www.instagram.com/kkm29_jagapurakulon" },
       { label: "Instagram @padiku.co", href: "https://www.instagram.com/padiku.co" },
     ],
   },
@@ -57,9 +57,20 @@ export function SiteFooter() {
           ))}
         </div>
       </div>
-      <div className="footer-bottom">
+      <div className="footer-bottom flex-col md:flex-row gap-4 text-center md:text-left">
         <span className="footer-copy">
-          © 2026 Program PADIKU Desa Jagapura Kulon & KKM 29 Universitas Muhammadiyah Cirebon. All rights reserved.
+          © 2026 Program PADIKU KKM 29 Universitas Muhammadiyah Cirebon. All rights reserved.
+        </span>
+        <span className="footer-copy">
+          Designed by{" "}
+          <a
+            href="https://www.andidelouise.net"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="border-b-2 border-current hover:text-[var(--bone)] transition-colors pb-[1px]"
+          >
+            Andi Nugroho
+          </a>
         </span>
       </div>
     </footer>

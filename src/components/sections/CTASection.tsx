@@ -4,8 +4,8 @@ import { Button } from "@/components/ui/button"
 import { SplitText } from "@/components/ui/split-text"
 import Magnet from "@/components/reactbits/Magnet"
 
-const WA_URL =
-  "https://wa.me/6285179778898?text=Halo%20Pengelola%20PADIKU%20Desa%20Jagapura%20Kulon%2C%20saya%20ingin%20berkonsultasi%20mengenai%20pemesanan%20produk%20makanan%20khas%20lokal."
+const IG_URL =
+  "https://ig.me/m/padiku.co?text=Halo%20Pengelola%20PADIKU%20Desa%20Jagapura%20Kulon%2C%20saya%20ingin%20berkonsultasi%20mengenai%20pemesanan%20produk%20makanan%20khas%20lokal."
 const MAPS_URL =
   "https://maps.google.com/?q=Desa+Jagapura+Kulon+Kecamatan+Gegesik+Kabupaten+Cirebon"
 
@@ -38,8 +38,8 @@ export function CTASection() {
         <div className="cta-final-buttons flex flex-wrap justify-center gap-4">
           <Magnet padding={60} magnetStrength={6}>
             <Button variant="cta-bone" asChild>
-              <a href={WA_URL} target="_blank" rel="noopener noreferrer">
-                Hubungi via WhatsApp
+              <a href={IG_URL} target="_blank" rel="noopener noreferrer">
+                Pesan via Instagram
                 <svg className="-mr-1" width="15" height="15" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M5 12H19" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
                   <path d="M13 6L19 12L13 18" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
