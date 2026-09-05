@@ -25,7 +25,7 @@ const columns = [
     links: [
       { label: "Desa Jagapura Kulon, Gegesik", href: "#" },
       { label: "Universitas Muhammadiyah Cirebon", href: "https://umc.ac.id" },
-      { label: "WhatsApp Order Hub", href: "https://wa.me/6285179778898" },
+      { label: "Instagram @padiku.co", href: "https://www.instagram.com/padiku.co" },
     ],
   },
 ] as const
