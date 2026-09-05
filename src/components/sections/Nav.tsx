@@ -13,8 +13,7 @@ const links = [
   { label: "Tanya Jawab", href: "/#faq" },
 ] as const
 
-const WA_URL =
-  "https://wa.me/6285179778898?text=Halo%20Pengelola%20PADIKU%20Desa%20Jagapura%20Kulon%2C%20saya%20ingin%20memesan%20produk%20UMKM%20sirkular."
+const IG_URL = "https://www.instagram.com/padiku.co"
 
 export function Nav() {
   const [isOpen, setIsOpen] = useState(false)
@@ -54,15 +53,12 @@ export function Nav() {
           ))}
         </ul>
 
-        {/* Desktop WA Button */}
+        {/* Desktop IG Button */}
         <div className="hidden md:flex flex-1 justify-end relative z-[110]">
-          <Button variant="hero-cta" size="nav" asChild>
-            <a href={WA_URL} target="_blank" rel="noopener noreferrer">
-              Pesan via WhatsApp
-              <svg className="-mr-1" width="15" height="15" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M5 12H19" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-                <path d="M13 6L19 12L13 18" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-              </svg>
+          <Button variant="hero-cta" size="nav" className="group" asChild>
+            <a href={IG_URL} target="_blank" rel="noopener noreferrer">
+              <img src="https://img.icons8.com/?size=100&id=BrU2BBoRXiWq&format=png&color=000000" alt="Instagram" className="w-[18px] h-[18px] object-contain transition-all" />
+              @padiku.co
             </a>
           </Button>
         </div>
@@ -138,27 +134,14 @@ export function Nav() {
           <div className="h-px w-24 bg-[rgba(30,38,17,0.1)] my-2"></div>
 
           <a
-            href={WA_URL}
+            href={IG_URL}
             target="_blank"
             rel="noopener noreferrer"
             className="flex h-14 w-full items-center justify-center gap-2 rounded-full bg-[var(--olive-800)] hover:bg-[var(--olive-900)] text-xl font-medium text-[var(--bone)] transition-all shadow-[0_4px_14px_0_rgba(30,38,17,0.35)]"
             onClick={() => setIsOpen(false)}
           >
-            Pesan via WhatsApp
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="20"
-              height="20"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              strokeWidth="2"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-            >
-              <path d="M5 12H19" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-              <path d="M13 6L19 12L13 18" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-            </svg>
+            <img src="https://img.icons8.com/?size=100&id=BrU2BBoRXiWq&format=png&color=000000" alt="Instagram" className="w-6 h-6 object-contain" />
+            @padiku.co
           </a>
         </nav>
       </div>
