@@ -32,8 +32,8 @@ const columns = [
 
 export function SiteFooter() {
   return (
-    <footer>
-      <div className="footer-top">
+    <footer className="relative overflow-hidden">
+      <div className="footer-top relative z-10">
         <div className="footer-brand">
           <div className="footer-brand-name flex items-center gap-2">
             <img src="/logo-padiku.png" alt="PADIKU Logo" className="w-14 h-14 object-contain" /> PADIKU — Jagapura Kulon
@@ -57,7 +57,7 @@ export function SiteFooter() {
           ))}
         </div>
       </div>
-      <div className="footer-bottom flex-col md:flex-row gap-4 text-center md:text-left">
+      <div className="footer-bottom flex-col md:flex-row gap-4 text-center md:text-left relative z-10">
         <span className="footer-copy">
           © 2026 Program PADIKU KKM 29 Universitas Muhammadiyah Cirebon. All rights reserved.
         </span>
@@ -71,6 +71,18 @@ export function SiteFooter() {
           >
             Andi Nugroho
           </a>
+        </span>
+      </div>
+
+      {/* Giant Footer Text */}
+      <div className="absolute bottom-0 left-0 w-full flex justify-center translate-y-[35%] pointer-events-none select-none z-0">
+        <span 
+          className="font-black leading-[0.75] tracking-[-0.04em] text-transparent transition-all duration-700 ease-out giant-footer-text pointer-events-auto cursor-default"
+          style={{
+            fontSize: "clamp(60px, 18vw, 300px)"
+          }}
+        >
+          JAGAPURA
         </span>
       </div>
     </footer>

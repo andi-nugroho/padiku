@@ -1369,3 +1369,11 @@ footer {
   animation: none;
   mix-blend-mode: normal;
 }
+
+/* ── GIANT FOOTER TEXT ── */
+.giant-footer-text {
+  -webkit-text-stroke: 2px rgba(243, 238, 228, 0.12);
+}
+.giant-footer-text:hover {
+  -webkit-text-stroke: 2px var(--bone);
+}
