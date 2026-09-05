@@ -16,6 +16,7 @@ const products = [
     tag: "Makanan Khas",
     image: "/padi.jpg",
     waText: "Halo%20PADIKU%20Jagapura%20Kulon%2C%20saya%20ingin%20memesan%20Grejeg.",
+    waNumber: "6289603092971",
   },
   {
     name: "Sambel Garing",
@@ -41,7 +42,7 @@ const features = [
   "Diproduksi langsung oleh pelaku UMKM Desa Jagapura Kulon",
   "Cita rasa autentik khas daerah yang dijaga kualitasnya",
   "Mendukung pemberdayaan ekonomi lokal desa",
-  "Pemesanan langsung terintegrasi ke WhatsApp Pengelola UMKM & Poktan",
+  "Pemesanan langsung terintegrasi ke WhatsApp Pengelola UMKM",
 ]
 
 export default function KatalogPage() {
@@ -99,7 +100,7 @@ export default function KatalogPage() {
 
               <Button variant="hero-cta" className="w-full justify-center gap-2" asChild>
                 <a
-                  href={`https://wa.me/6285179778898?text=${p.waText}`}
+                  href={`https://wa.me/${p.waNumber || "6285179778898"}?text=${p.waText}`}
                   target="_blank"
                   rel="noopener noreferrer"
                 >
