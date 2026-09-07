@@ -22,6 +22,7 @@ const products = [
     tag: "Olahan Rumahan",
     image: "/coffee.jpg",
     waText: "Halo%20PADIKU%20Jagapura%20Kulon%2C%20saya%20ingin%20memesan%20Sambel%20Garing.",
+    waNumber: "6281928438240",
   },
   {
     name: "Gonjing",
@@ -31,6 +32,8 @@ const products = [
     tag: "Kue Tradisional",
     image: "/chili.jpg",
     waText: "Halo%20PADIKU%20Jagapura%20Kulon%2C%20saya%20ingin%20memesan%20Gonjing.",
+    orderLink: "https://www.instagram.com/padiku.co/",
+    orderText: "Pesan via Instagram",
   },
 ]
 
@@ -38,7 +41,7 @@ const features = [
   "Diproduksi langsung oleh pelaku UMKM Desa Jagapura Kulon",
   "Cita rasa autentik khas daerah yang dijaga kualitasnya",
   "Mendukung pemberdayaan ekonomi lokal desa",
-  "Pemesanan langsung terintegrasi ke WhatsApp Pengelola UMKM & Poktan",
+  "Pemesanan langsung terintegrasi ke WhatsApp Pengelola UMKM",
 ]
 
 export function MarketEconomics() {
@@ -93,11 +96,11 @@ export function MarketEconomics() {
 
             <Button variant="hero-cta" className="w-full justify-center gap-2" asChild>
               <a
-                href={`https://wa.me/${p.waNumber || "6285179778898"}?text=${p.waText}`}
+                href={p.orderLink || `https://wa.me/${p.waNumber || "6285179778898"}?text=${p.waText}`}
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <span>Pesan via WhatsApp</span>
+                <span>{p.orderText || "Pesan via WhatsApp"}</span>
                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M5 12H19" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
                   <path d="M13 6L19 12L13 18" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
