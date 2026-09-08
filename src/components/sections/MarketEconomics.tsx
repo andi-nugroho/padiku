@@ -1,10 +1,23 @@
-import Image from "next/image"
 import Link from "next/link"
 import { motion } from "framer-motion"
 import { Button } from "@/components/ui/button"
 import { ProductCarousel } from "@/components/ui/product-carousel"
 
-const products = [
+type Product = {
+  name: string;
+  price: string;
+  unit: string;
+  desc: string;
+  tag: string;
+  image: string;
+  images?: string[];
+  waText?: string;
+  waNumber?: string;
+  orderLink?: string;
+  orderText?: string;
+};
+
+const products: Product[] = [
   {
     name: "Grejeg",
     price: "Harga Bervariasi",
@@ -39,13 +52,6 @@ const products = [
   },
 ]
 
-const features = [
-  "Diproduksi langsung oleh pelaku UMKM Desa Jagapura Kulon",
-  "Cita rasa autentik khas daerah yang dijaga kualitasnya",
-  "Mendukung pemberdayaan ekonomi lokal desa",
-  "Pemesanan langsung terintegrasi ke WhatsApp Pengelola UMKM",
-]
-
 export function MarketEconomics() {
   return (
     <section id="katalog" className="me-section py-20">
@@ -70,7 +76,7 @@ export function MarketEconomics() {
             transition={{ duration: 0.5, delay: idx * 0.1 }}
           >
             <div>
-              <ProductCarousel images={(p as any).images || [p.image]} alt={p.name} tag={p.tag} />
+              <ProductCarousel images={p.images || [p.image]} alt={p.name} tag={p.tag} />
 
               <div className="flex items-baseline justify-between mb-2">
                 <h3 className="text-xl font-bold text-[var(--olive-950)]">{p.name}</h3>

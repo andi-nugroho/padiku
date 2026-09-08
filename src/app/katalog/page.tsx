@@ -1,6 +1,5 @@
 "use client"
 
-import Image from "next/image"
 import { motion } from "framer-motion"
 import { Button } from "@/components/ui/button"
 import { Nav } from "@/components/sections/Nav"
@@ -8,7 +7,21 @@ import { SiteFooter } from "@/components/sections/SiteFooter"
 import { ProductCarousel } from "@/components/ui/product-carousel"
 import { ScrollProgress } from "@/components/ui/scroll-progress"
 
-const products = [
+type Product = {
+  name: string;
+  price: string;
+  unit: string;
+  desc: string;
+  tag: string;
+  image: string;
+  images?: string[];
+  waText?: string;
+  waNumber?: string;
+  orderLink?: string;
+  orderText?: string;
+};
+
+const products: Product[] = [
   {
     name: "Grejeg",
     price: "Harga Bervariasi",
@@ -77,7 +90,7 @@ export default function KatalogPage() {
               transition={{ duration: 0.5, delay: idx * 0.1 }}
             >
               <div>
-                <ProductCarousel images={(p as any).images || [p.image]} alt={p.name} tag={p.tag} />
+                <ProductCarousel images={p.images || [p.image]} alt={p.name} tag={p.tag} />
 
                 <div className="flex items-baseline justify-between mb-2">
                   <h3 className="text-xl font-bold text-[var(--olive-950)]">{p.name}</h3>
