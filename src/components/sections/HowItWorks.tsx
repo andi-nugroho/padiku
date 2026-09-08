@@ -9,14 +9,14 @@ const steps = [
     title: "Pemilihan Bahan Baku Lokal",
     desc: "Bahan baku berkualitas diperoleh langsung dari pasar dan produsen lokal di Desa Jagapura Kulon, memastikan kesegaran dan mendukung ekonomi berputar di desa.",
     tag: "Bahan Baku 100% Lokal Desa",
-    image: "/hero.jpg",
+    image: "/pembuatan_grejeg.jpg",
   },
   {
     n: "02",
     title: "Proses Produksi Higienis",
     desc: "Produksi Grejeg, Sambel Garing, dan Gonjing dilakukan oleh kelompok UMKM desa terlatih menggunakan resep tradisional dengan standar kebersihan tinggi.",
     tag: "Produksi Ibu Rumah Tangga",
-    image: "/padi.jpg",
+    image: "/pembuatan_cabe_kering.jpg",
   },
   {
     n: "03",
