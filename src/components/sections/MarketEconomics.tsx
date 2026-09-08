@@ -2,6 +2,7 @@ import Image from "next/image"
 import Link from "next/link"
 import { motion } from "framer-motion"
 import { Button } from "@/components/ui/button"
+import { ProductCarousel } from "@/components/ui/product-carousel"
 
 const products = [
   {
@@ -11,7 +12,7 @@ const products = [
     desc: "Makanan khas Jagapura Kulon yang diproduksi dengan berbagai jenis, menjadi ikon pemberdayaan ekonomi masyarakat di Jagapura.",
     tag: "Makanan Khas",
     image: "/padi.jpg",
-    waText: "Halo%20PADIKU%20Jagapura%20Kulon%2C%20saya%20ingin%20memesan%20Grejeg.",
+    waText: "Halo%20Ibu%20Sofa%2C%20saya%20ingin%20memesan%20Grejeg.",
     waNumber: "6289603092971",
   },
   {
@@ -20,8 +21,9 @@ const products = [
     unit: "",
     desc: "Produk sambal khas olahan rumahan yang gurih dan nikmat (produksi Ibu Syahrini).",
     tag: "Olahan Rumahan",
-    image: "/coffee.jpg",
-    waText: "Halo%20PADIKU%20Jagapura%20Kulon%2C%20saya%20ingin%20memesan%20Sambel%20Garing.",
+    image: "/cabe/cabe1.jpg",
+    images: ["/cabe/cabe1.jpg", "/cabe/cabe2.jpg", "/cabe/cabe3.jpg", "/cabe/cabe4.jpg", "/cabe/cabe5.jpg"],
+    waText: "Halo%20Ibu%20Sarinih%2C%20saya%20ingin%20memesan%20Sambel%20Garing.",
     waNumber: "6281928438240",
   },
   {
@@ -68,17 +70,7 @@ export function MarketEconomics() {
             transition={{ duration: 0.5, delay: idx * 0.1 }}
           >
             <div>
-              <div className="relative w-full h-48 rounded-xl overflow-hidden mb-5">
-                <Image
-                  src={p.image}
-                  alt={p.name}
-                  fill
-                  className="object-cover hover:scale-105 transition-transform duration-500"
-                />
-                <span className="absolute top-3 left-3 bg-[var(--olive-800)] text-[var(--bone)] text-xs font-semibold px-3 py-1 rounded-full uppercase tracking-wider">
-                  {p.tag}
-                </span>
-              </div>
+              <ProductCarousel images={(p as any).images || [p.image]} alt={p.name} tag={p.tag} />
 
               <div className="flex items-baseline justify-between mb-2">
                 <h3 className="text-xl font-bold text-[var(--olive-950)]">{p.name}</h3>
