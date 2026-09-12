@@ -43,7 +43,7 @@ export function LoadingScreen({ onComplete }: { onComplete: () => void }) {
               className="flex flex-col items-center gap-2 mb-4"
             >
               <div className="w-20 h-20 relative">
-                <img src="/logo-padiku.png" alt="PADIKU Logo" className="w-full h-full object-contain" />
+                <img src="https://cdn.jsdelivr.net/gh/andi-nugroho/padiku@main/public/logo-padiku.png" alt="PADIKU Logo" className="w-full h-full object-contain" />
               </div>
               <span className="text-2xl font-bold text-[var(--olive-950)] tracking-tight">
                 PADIKU

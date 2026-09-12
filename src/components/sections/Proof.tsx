@@ -5,10 +5,10 @@ import LogoLoop from "@/components/reactbits/LogoLoop"
 /* Marks-only logos get a wordmark span; JPGs with a baked background
    render as rounded badges; dark marks invert for the olive band. */
 const partners = [
-  { name: "Universitas Muhammadiyah Cirebon", logo: "/LOGO/logo-umc.png", imgClass: "w-5 h-5 object-contain" },
-  { name: "KKM 29 Jagapura Kulon", logo: "/LOGO/kkm29.png", imgClass: "w-8 h-8 object-contain" },
-  { name: "Pemerintah Desa Jagapura Kulon", logo: "/logo-padiku.png", imgClass: "w-7 h-7 object-contain" },
-  { name: "Kelompok UMKM & Ibu Rumah Tangga", logo: "/logo-padiku.png", imgClass: "w-7 h-7 object-contain" },
+  { name: "Universitas Muhammadiyah Cirebon", logo: "https://cdn.jsdelivr.net/gh/andi-nugroho/padiku@main/public/LOGO/logo-umc.png", imgClass: "w-5 h-5 object-contain" },
+  { name: "KKM 29 Jagapura Kulon", logo: "https://cdn.jsdelivr.net/gh/andi-nugroho/padiku@main/public/LOGO/kkm29.png", imgClass: "w-8 h-8 object-contain" },
+  { name: "Pemerintah Desa Jagapura Kulon", logo: "https://cdn.jsdelivr.net/gh/andi-nugroho/padiku@main/public/logo-padiku.png", imgClass: "w-7 h-7 object-contain" },
+  { name: "Kelompok UMKM & Ibu Rumah Tangga", logo: "https://cdn.jsdelivr.net/gh/andi-nugroho/padiku@main/public/logo-padiku.png", imgClass: "w-7 h-7 object-contain" },
 ]
 
 const logos = partners.map((partner) => ({

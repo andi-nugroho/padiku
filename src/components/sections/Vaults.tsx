@@ -16,7 +16,7 @@ const pillars = [
       { label: "Fokus Utama", val: "Ekonomi Sirkular" },
       { label: "Komoditas", val: "Makanan Khas Lokal" },
     ],
-    image: "/chili.jpg",
+    image: "https://cdn.jsdelivr.net/gh/andi-nugroho/padiku@main/public/chili.jpg",
   },
   {
     name: "Pilar 02",
@@ -26,7 +26,7 @@ const pillars = [
       { label: "Pengelola", val: "UMKM Jagapura Kulon" },
       { label: "Produk Utama", val: "Grejeg, Sambel, Gonjing" },
     ],
-    image: "/coffee.jpg",
+    image: "https://cdn.jsdelivr.net/gh/andi-nugroho/padiku@main/public/coffee.jpg",
   },
   {
     name: "Pilar 03",
@@ -36,7 +36,7 @@ const pillars = [
       { label: "Institusi", val: "Univ. Muhammadiyah Cirebon" },
       { label: "Fokus Proker", val: "Digitalisasi & E-Katalog" },
     ],
-    image: "/hero2.jpg",
+    image: "https://cdn.jsdelivr.net/gh/andi-nugroho/padiku@main/public/hero2.jpg",
   },
 ] as const
 

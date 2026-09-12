@@ -36,7 +36,7 @@ export function SiteFooter() {
       <div className="footer-top relative z-10">
         <div className="footer-brand">
           <div className="footer-brand-name flex items-center gap-2">
-            <img src="/logo-padiku.png" alt="PADIKU Logo" className="w-14 h-14 object-contain" /> PADIKU — Jagapura Kulon
+            <img src="https://cdn.jsdelivr.net/gh/andi-nugroho/padiku@main/public/logo-padiku.png" alt="PADIKU Logo" className="w-14 h-14 object-contain" /> PADIKU — Jagapura Kulon
           </div>
           <p className="footer-brand-desc">
             Pemberdayaan Masyarakat melalui Agribisnis, Diversifikasi Pangan, dan Ekonomi Sirkular. Desa Jagapura Kulon, Kecamatan Gegesik, Kabupaten Cirebon.

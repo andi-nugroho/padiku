@@ -29,7 +29,7 @@ export function Nav() {
         <div className="nav-left relative z-[110]">
           <Link href="/" onClick={() => setIsOpen(false)} className="nav-logo flex items-center gap-1 no-underline">
             <div className="flex items-center justify-center w-14 h-14 rounded-lg overflow-hidden">
-              <img src="/logo-padiku.png" alt="PADIKU" className="w-full h-full object-contain" />
+              <img src="https://cdn.jsdelivr.net/gh/andi-nugroho/padiku@main/public/logo-padiku.png" alt="PADIKU" className="w-full h-full object-contain" />
             </div>
             <div className="flex flex-col">
               <span className="text-[20px] font-bold tracking-tight text-[var(--olive-950)] leading-none">

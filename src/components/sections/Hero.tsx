@@ -14,7 +14,7 @@ const fadeUp = (delay: number, ready: boolean) => ({
   transition: { delay, duration: 0.8, ease: [0.22, 1, 0.36, 1] as const },
 })
 
-const heroImages = ["/hero.jpg", "/hero1.jpg", "/hero2.jpg", "/hero3.jpg"]
+const heroImages = ["https://cdn.jsdelivr.net/gh/andi-nugroho/padiku@main/public/hero.jpg", "https://cdn.jsdelivr.net/gh/andi-nugroho/padiku@main/public/hero1.jpg", "https://cdn.jsdelivr.net/gh/andi-nugroho/padiku@main/public/hero2.jpg", "https://cdn.jsdelivr.net/gh/andi-nugroho/padiku@main/public/hero3.jpg"]
 const ROTATE_INTERVAL = 5000
 
 const WA_URL =
