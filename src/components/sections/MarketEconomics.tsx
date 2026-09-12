@@ -24,7 +24,7 @@ const products: Product[] = [
     unit: "",
     desc: "Makanan khas Jagapura Kulon yang diproduksi dengan berbagai jenis, menjadi ikon pemberdayaan ekonomi masyarakat di Jagapura.",
     tag: "Makanan Khas",
-    image: "https://cdn.jsdelivr.net/gh/andi-nugroho/padiku@main/public/padi.jpg",
+    image: "https://cdn.jsdelivr.net/gh/andi-nugroho/padiku@main/public/grejeg_kemasan.png",
     waText: "Halo%20Ibu%20Sofa%2C%20saya%20ingin%20memesan%20Grejeg.",
     waNumber: "6289603092971",
   },
@@ -79,11 +79,11 @@ export function MarketEconomics() {
               <ProductCarousel images={p.images || [p.image]} alt={p.name} tag={p.tag} />
 
               <div className="flex items-baseline justify-between mb-2">
-                <h3 className="text-xl font-bold text-[var(--olive-950)]">{p.name}</h3>
+                <h3 className="text-2xl font-bold text-[var(--olive-950)]">{p.name}</h3>
               </div>
 
               <div className="flex items-baseline gap-1 mb-3">
-                <span className="text-2xl font-bold text-[var(--harvest)]">{p.price}</span>
+                <span className="text-lg font-bold text-[var(--harvest)]">{p.price}</span>
                 <span className="text-sm font-medium text-[var(--stone)]">{p.unit}</span>
               </div>
 
