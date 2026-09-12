@@ -17,7 +17,7 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://umkmjagapura.web.id"),
   title: "PADIKU - Digitalisasi UMKM Desa Jagapura Kulon",
   description:
-    "Platform resmi digitalisasi UMKM Program PADIKU di Desa Jagapura Kulon, Cirebon.",
+    "Platform resmi digitalisasi UMKM Program PADIKU di Desa Jagapura Kulon, Cirebon. Memberdayakan ekonomi sirkular desa lewat produk makanan khas lokal unggulan.",
   keywords: [
     "UMKM Desa Jagapura Kulon",
     "Makanan Khas Cirebon",
@@ -37,12 +37,12 @@ export const metadata: Metadata = {
   openGraph: {
     title: "PADIKU - Digitalisasi UMKM Desa Jagapura Kulon",
     description:
-      "Platform resmi digitalisasi UMKM Program PADIKU di Desa Jagapura Kulon, Cirebon.",
+      "Platform resmi digitalisasi UMKM Program PADIKU di Desa Jagapura Kulon, Cirebon. Memberdayakan ekonomi sirkular desa lewat produk makanan khas lokal unggulan.",
     url: "https://umkmjagapura.web.id",
     siteName: "PADIKU",
     images: [
       {
-        url: "/og-image.png",
+        url: "/og-image.jpg",
         width: 1200,
         height: 630,
         alt: "PADIKU - Digitalisasi UMKM & Produk Desa Jagapura Kulon",
@@ -55,8 +55,15 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "PADIKU - Digitalisasi UMKM Desa Jagapura Kulon",
     description:
-      "Platform resmi digitalisasi UMKM Program PADIKU di Desa Jagapura Kulon, Cirebon.",
-    images: ["/og-image.png"],
+      "Platform resmi digitalisasi UMKM Program PADIKU di Desa Jagapura Kulon, Cirebon. Memberdayakan ekonomi sirkular desa lewat produk makanan khas lokal unggulan.",
+    site: "@umkmjagapura",
+    creator: "@umkmjagapura",
+    images: [
+      {
+        url: "/og-image.jpg",
+        alt: "PADIKU - Digitalisasi UMKM & Produk Desa Jagapura Kulon",
+      },
+    ],
   },
   verification: {
     google: "WTj1vNn1l05IWJ1I_n_1MIfv8JBjlgiL8r3g5o2xQdY",
@@ -99,9 +106,9 @@ export default function RootLayout({
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
         <Script 
-          defer 
           src="https://cloud.umami.is/script.js" 
           data-website-id="5a7acdf1-1d79-4c2c-890a-8c44afd0042a" 
+          strategy="afterInteractive"
         />
         {children}
       </body>
