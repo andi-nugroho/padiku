@@ -23,13 +23,19 @@ export function ProductCarousel({ images, alt, tag }: ProductCarouselProps) {
   }
 
   return (
-    <div className="relative w-full aspect-square rounded-xl overflow-hidden mb-5 group">
-      <Image
-        src={images[currentIndex]}
-        alt={`${alt} ${currentIndex + 1}`}
-        fill
-        className="object-cover transition-transform duration-500 group-hover:scale-105"
-      />
+    <div className="relative w-full aspect-square rounded-xl overflow-hidden mb-5 group bg-gray-100">
+      {images.map((src, idx) => (
+        <Image
+          key={idx}
+          src={src}
+          alt={`${alt} ${idx + 1}`}
+          fill
+          priority={idx === 0}
+          className={`object-cover transition-all duration-500 absolute inset-0 ${
+            idx === currentIndex ? "opacity-100 z-10 scale-100 group-hover:scale-105" : "opacity-0 z-0 scale-95"
+          }`}
+        />
+      ))}
       
       {images.length > 1 && (
         <>
