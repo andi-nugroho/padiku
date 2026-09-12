@@ -17,8 +17,7 @@ const fadeUp = (delay: number, ready: boolean) => ({
 const heroImages = ["https://cdn.jsdelivr.net/gh/andi-nugroho/padiku@main/public/hero.jpg", "https://cdn.jsdelivr.net/gh/andi-nugroho/padiku@main/public/hero1.jpg", "https://cdn.jsdelivr.net/gh/andi-nugroho/padiku@main/public/hero2.jpg", "https://cdn.jsdelivr.net/gh/andi-nugroho/padiku@main/public/hero3.jpg"]
 const ROTATE_INTERVAL = 5000
 
-const WA_URL =
-  "https://wa.me/6285179778898?text=Halo%20Pengelola%20PADIKU%20Desa%20Jagapura%20Kulon%2C%20saya%20ingin%20berkonsultasi%20dan%20memesan%20produk%20UMKM."
+const IG_URL = "https://www.instagram.com/padiku.co/"
 
 export function Hero({ ready }: { ready: boolean }) {
   const [currentIndex, setCurrentIndex] = useState(0)
@@ -65,8 +64,8 @@ export function Hero({ ready }: { ready: boolean }) {
             </Button>
           </Magnet>
           <Button variant="hero-ghost" asChild>
-            <a href={WA_URL} target="_blank" rel="noopener noreferrer">
-              Pesan via WhatsApp
+            <a href={IG_URL} target="_blank" rel="noopener noreferrer">
+              Pesan via Instagram
             </a>
           </Button>
         </motion.div>
