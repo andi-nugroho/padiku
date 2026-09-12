@@ -5,14 +5,14 @@
 
 Digitalisasi UMKM & Ekonomi Sirkular Desa Jagapura Kulon, Kecamatan Gegesik, Kabupaten Cirebon.
 <br />
-Pemberdayaan Masyarakat melalui Agribisnis, Diversifikasi Pangan, Pupuk Organik Sekam Padi, Kompos Bio-nutrisi, dan Media Tanam Sirkular.
+Platform resmi E-Katalog digitalisasi produk UMKM unggulan desa seperti Grejeg, Sambel Garing, dan Gonjing, yang memberdayakan ekonomi lokal masyarakat.
 
 [![BUILD](https://img.shields.io/github/actions/workflow/status/andi-nugroho/padikusirkular/ci.yml?branch=main&label=BUILD&style=for-the-badge&logo=github&color=404f1d)](https://github.com/andi-nugroho/padikusirkular/actions)
 [![STARS](https://img.shields.io/github/stars/andi-nugroho/padikusirkular?style=for-the-badge&logo=github&color=8fa36c)](https://github.com/andi-nugroho/padikusirkular/stargazers)
 
 <br />
 
-![PADIKU Preview](public/preview.png)
+![PADIKU Preview](public/preview-website.png)
 
 </div>
 
@@ -21,8 +21,9 @@ Pemberdayaan Masyarakat melalui Agribisnis, Diversifikasi Pangan, Pupuk Organik 
 
 ## Mengapa PADIKU?
 
-- **Ekonomi Sirkular**: Memanfaatkan limbah sekam padi menjadi pupuk organik dan kompos bio-nutrisi berkualitas tinggi.
-- **Pemberdayaan UMKM**: Mendukung pertumbuhan agribisnis lokal dan kemandirian pangan masyarakat desa.
+- **E-Katalog UMKM**: Memfasilitasi pemasaran produk lokal unggulan desa seperti Grejeg, Sambel Garing, dan Gonjing secara digital.
+- **Ekonomi Sirkular**: Memberdayakan ekonomi lokal dengan bahan baku dari desa, diproduksi oleh masyarakat desa, untuk kesejahteraan desa.
+- **Pemesanan Mudah**: Terintegrasi langsung dengan WhatsApp pengelola UMKM desa untuk kemudahan pemesanan.
 - **Desain Web Modern**: UI yang estetik, hangat, dan responsif dengan performa tinggi untuk kemudahan akses informasi.
 - **Teknologi Cepat**: Dibangun dengan Next.js App Router (React 19) dan Framer Motion untuk transisi dan animasi halus.
 
