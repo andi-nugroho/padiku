@@ -2,17 +2,17 @@
 
 import { useState } from "react"
 import {
-  AboutPanora,
+  KenapaPadiku,
   CTASection,
   FAQ,
   Hero,
   HowItWorks,
   LoadingScreen,
-  MarketEconomics,
+  KatalogPreview,
   Nav,
-  Proof,
+  MitraKolaborasi,
   SiteFooter,
-  Vaults,
+  TentangKami,
 } from "./sections"
 import { ScrollProgress } from "./ui/scroll-progress"
 
@@ -26,11 +26,11 @@ export function LandingPage() {
       <Nav />
       <main>
         <Hero ready={!loading} />
-        <AboutPanora />
-        <Proof />
+        <KenapaPadiku />
+        <MitraKolaborasi />
         <HowItWorks />
-        <Vaults />
-        <MarketEconomics />
+        <TentangKami />
+        <KatalogPreview />
         <FAQ />
         <CTASection />
         <SiteFooter />

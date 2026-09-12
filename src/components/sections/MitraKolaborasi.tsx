@@ -20,7 +20,7 @@ const logos = partners.map((partner) => ({
   ariaLabel: partner.name,
 }))
 
-export function Proof() {
+export function MitraKolaborasi() {
   return (
     <section id="proof" className="proof-section">
       <div className="proof-label">Mitra Kolaborasi & Pendampingan Program</div>

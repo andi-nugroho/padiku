@@ -9,7 +9,7 @@ import { ScrollReveal } from "@/components/reactbits/ScrollReveal"
  * an olive-drenched section of giant statements, then a bone
  * section that answers them and hands off to How It Works.
  */
-export function AboutPanora() {
+export function KenapaPadiku() {
   return (
     <>
       <section id="why" className="statements">

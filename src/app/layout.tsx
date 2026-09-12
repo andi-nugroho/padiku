@@ -32,7 +32,7 @@ export const metadata: Metadata = {
   },
   icons: {
     icon: "/favicon.ico",
-    apple: "https://cdn.jsdelivr.net/gh/andi-nugroho/padiku@main/public/apple-touch-icon.png",
+    apple: "/apple-touch-icon.png",
   },
   openGraph: {
     title: "PADIKU - Digitalisasi UMKM Desa Jagapura Kulon",
@@ -42,7 +42,7 @@ export const metadata: Metadata = {
     siteName: "PADIKU",
     images: [
       {
-        url: "https://cdn.jsdelivr.net/gh/andi-nugroho/padiku@main/public/og-image.png",
+        url: "/og-image.png",
         width: 1200,
         height: 630,
         alt: "PADIKU - Digitalisasi UMKM & Produk Desa Jagapura Kulon",
@@ -56,7 +56,7 @@ export const metadata: Metadata = {
     title: "PADIKU - Digitalisasi UMKM Desa Jagapura Kulon",
     description:
       "Platform resmi digitalisasi UMKM Program PADIKU di Desa Jagapura Kulon, Cirebon.",
-    images: ["https://cdn.jsdelivr.net/gh/andi-nugroho/padiku@main/public/og-image.png"],
+    images: ["/og-image.png"],
   },
   verification: {
     google: "WTj1vNn1l05IWJ1I_n_1MIfv8JBjlgiL8r3g5o2xQdY",

@@ -40,7 +40,7 @@ const pillars = [
   },
 ] as const
 
-export function Vaults() {
+export function TentangKami() {
   return (
     <section id="tentang" className="vault-mobile-section">
       <div className="vault-mobile-header">
