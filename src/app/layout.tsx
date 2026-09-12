@@ -81,7 +81,7 @@ export default function RootLayout({
     name: "PADIKU",
     description:
       "Program Pemberdayaan Masyarakat melalui Agribisnis, Diversifikasi Pangan, dan Ekonomi Sirkular di Desa Jagapura Kulon, Kabupaten Cirebon",
-    url: "https://www.umkmjagapura.web.id",
+    url: "https://umkmjagapura.web.id",
     address: {
       "@type": "PostalAddress",
       streetAddress: "Kantor Kuwu Desa Jagapura Kulon",

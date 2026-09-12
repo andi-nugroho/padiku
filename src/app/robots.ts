@@ -7,6 +7,6 @@ export default function robots(): MetadataRoute.Robots {
       allow: '/',
       disallow: '/private/',
     },
-    sitemap: 'https://www.umkmjagapura.web.id/sitemap.xml',
+    sitemap: 'https://umkmjagapura.web.id/sitemap.xml',
   };
 }
