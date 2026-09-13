@@ -1678,7 +1678,24 @@ footer {
   display: flex;
   align-items: center;
   gap: 16px;
-  flex-wrap: wrap;
+}
+
+@media (max-width: 640px) {
+  .blog-page-meta {
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+    flex-wrap: nowrap;
+  }
+  .blog-page-tag {
+    white-space: nowrap;
+    flex-shrink: 0;
+  }
+  .blog-page-meta-details {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 6px;
+  }
 }
 
 .blog-page-meta-item {

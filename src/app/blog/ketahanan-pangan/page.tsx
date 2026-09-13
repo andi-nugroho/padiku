@@ -2,14 +2,32 @@
 
 import Image from "next/image"
 import Link from "next/link"
-import { useState } from "react"
-import { motion, AnimatePresence } from "framer-motion"
+import { useState, useRef } from "react"
+import { motion, AnimatePresence, useScroll, useTransform } from "framer-motion"
+import { Archive, Droplets, AlignVerticalSpaceAround, Sprout } from "lucide-react"
 import { Nav } from "@/components/sections/Nav"
 import { SiteFooter } from "@/components/sections/SiteFooter"
 import { ScrollProgress } from "@/components/ui/scroll-progress"
 
 export default function KetahananPanganPage() {
   const [isModalOpen, setIsModalOpen] = useState(false);
+  const timelineRef = useRef<HTMLDivElement>(null);
+  
+  const { scrollYProgress } = useScroll({
+    target: timelineRef,
+    offset: ["start center", "end center"]
+  });
+
+  const timelineHeight = useTransform(scrollYProgress, [0, 1], ["0%", "100%"]);
+
+  const timelineSteps = [
+    { title: "Pisahkan Limbah", description: "Mulailah dengan memisahkan sampah organik (sayur, buah, daun) dari sampah anorganik di dapur Anda." },
+    { title: "Masuk ke Komposter", description: "Masukkan limbah organik ke dalam komposter tertutup dan biarkan proses penguraian (dekomposisi) alami terjadi." },
+    { title: "Saring Pupuk Cair", description: "Setelah beberapa waktu, komposter akan menghasilkan cairan. Saring dan simpan sebagai pupuk organik cair yang kaya nutrisi." },
+    { title: "Siapkan Rak Vertikultur", description: "Susun rak secara bertingkat untuk menanam sayuran. Ini akan menghemat banyak ruang." },
+    { title: "Gunakan Pupuk", description: "Aplikasikan pupuk organik cair yang telah Anda buat untuk menyuburkan tanaman di rak vertikultur Anda secara rutin." },
+    { title: "Panen & Nikmati", description: "Sayur dan tanaman pangan segar siap dipanen untuk memenuhi sebagian kebutuhan gizi harian keluarga." },
+  ];
   
   return (
     <>
@@ -49,7 +67,7 @@ export default function KetahananPanganPage() {
               </div>
               <div className="blog-page-meta-item">
                 <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
-                <span>Tim Padiku</span>
+                <span>Proker Individu</span>
               </div>
             </div>
           </motion.div>
@@ -131,104 +149,140 @@ export default function KetahananPanganPage() {
               Berikut adalah tiga pilar utama yang bisa diterapkan di lingkungan rumah untuk mewujudkan ketahanan pangan yang berkelanjutan dan ramah lingkungan:
             </p>
 
-            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-6 my-12">
-              {/* Card 1 */}
-              <div className="bg-white p-6 rounded-2xl border border-[#1e2611]/10 shadow-sm hover:shadow-md transition-shadow">
-                <div className="w-16 h-16 bg-[#e9e2d2] rounded-full flex items-center justify-center mb-4 relative overflow-hidden">
-                  <Image src="https://img.icons8.com/fluency/96/compost.png" alt="Komposter Icon" width={40} height={40} className="object-contain" />
+            {/* Interactive Sticky Cards Stack */}
+            <div className="flex flex-col pb-[10vh] my-16 relative">
+              {[
+                {
+                  title: "Komposter",
+                  icon: <Archive strokeWidth={1.5} size={36} />,
+                  desc: "Wadah untuk mengolah bahan organik menjadi pupuk yang dapat dimanfaatkan kembali. Sangat cocok untuk mengolah limbah seperti sisa sayuran, kulit buah, sisa tanaman, dan daun kering.",
+                  points: ["Mengurangi limbah organik.", "Menghasilkan bahan pupuk gratis."],
+                  bg: "bg-[#e9e2d2]",
+                  text: "text-[#1e2611]",
+                  rotate: "rotate-[-1deg] md:-rotate-2",
+                  iconBg: "bg-[#1e2611]",
+                  iconColor: "text-[#e9e2d2]"
+                },
+                {
+                  title: "Pupuk Cair",
+                  icon: <Droplets strokeWidth={1.5} size={36} />,
+                  desc: "Hasil pengolahan bahan organik dari komposter dapat dimanfaatkan sebagai pupuk organik cair yang sangat baik untuk mendukung pertumbuhan tanaman dengan nutrisi alami.",
+                  points: ["Mendukung pertumbuhan tanaman.", "Mudah digunakan di rumah."],
+                  bg: "bg-[#1e2611]",
+                  text: "text-[#e9e2d2]",
+                  rotate: "rotate-[1deg] md:rotate-2",
+                  iconBg: "bg-[#e9e2d2]",
+                  iconColor: "text-[#1e2611]"
+                },
+                {
+                  title: "Rak Vertikultur",
+                  icon: <AlignVerticalSpaceAround strokeWidth={1.5} size={36} />,
+                  desc: "Teknik budidaya tanaman dengan memanfaatkan ruang secara vertikal. Solusi sempurna bagi keluarga yang ingin bertani namun memiliki pekarangan yang sangat terbatas.",
+                  points: ["Cocok untuk pekarangan terbatas.", "Optimalisasi ruang."],
+                  bg: "bg-[#e9e2d2]",
+                  text: "text-[#1e2611]",
+                  rotate: "rotate-[-1deg] md:-rotate-1",
+                  iconBg: "bg-[#1e2611]",
+                  iconColor: "text-[#e9e2d2]"
+                },
+                {
+                  title: "Budidaya & Panen",
+                  icon: <Sprout strokeWidth={1.5} size={36} />,
+                  desc: "Hasil akhir dari ekosistem ini adalah tersedianya sayur dan tanaman pangan bernutrisi dari kebun sendiri, yang siap dipanen untuk memenuhi kebutuhan gizi harian keluarga Anda.",
+                  points: ["Sumber pangan sehat mandiri.", "Menghemat pengeluaran dapur."],
+                  bg: "bg-[#1e2611]",
+                  text: "text-[#e9e2d2]",
+                  rotate: "rotate-[1deg] md:rotate-1",
+                  iconBg: "bg-[#e9e2d2]",
+                  iconColor: "text-[#1e2611]"
+                }
+              ].map((card, i) => (
+                <div 
+                  key={i} 
+                  className={`sticky top-20 md:top-32 min-h-[90vh] md:h-[80vh] flex flex-col justify-center`}
+                  style={{ zIndex: 10 + i }}
+                >
+                  <motion.div 
+                    initial={{ opacity: 0, y: 50 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true, margin: "-100px" }}
+                    transition={{ duration: 0.6 }}
+                    className={`w-full max-w-4xl mx-auto p-6 sm:p-8 md:p-12 lg:p-16 rounded-3xl md:rounded-[2rem] shadow-2xl transition-transform duration-500 hover:scale-[1.02] ${card.bg} ${card.text} ${card.rotate} origin-center border border-[#1e2611]/5`}
+                  >
+                    <div className="flex flex-col md:flex-row gap-6 lg:gap-12 items-start">
+                      <div className={`shrink-0 w-16 h-16 md:w-20 md:h-20 lg:w-24 lg:h-24 rounded-2xl md:rounded-[1.5rem] flex items-center justify-center ${card.iconBg} ${card.iconColor} shadow-inner`}>
+                        {card.icon}
+                      </div>
+                      <div>
+                        <h3 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-black mb-4 md:mb-6 uppercase tracking-tight leading-none">
+                          {card.title}
+                        </h3>
+                        <p className="text-base sm:text-lg md:text-xl lg:text-2xl leading-relaxed mb-6 md:mb-8 opacity-90 font-medium">
+                          {card.desc}
+                        </p>
+                        <ul className="space-y-3 md:space-y-4">
+                          {card.points.map((point, idx) => (
+                            <li key={idx} className="flex items-start md:items-center gap-3 text-sm sm:text-base md:text-lg lg:text-xl font-medium">
+                              <svg className="w-5 h-5 md:w-6 md:h-6 lg:w-7 lg:h-7 shrink-0 opacity-80 mt-1 md:mt-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="3" d="M5 13l4 4L19 7"></path>
+                              </svg>
+                              <span>{point}</span>
+                            </li>
+                          ))}
+                        </ul>
+                      </div>
+                    </div>
+                  </motion.div>
                 </div>
-                <h3 className="text-xl font-semibold text-[#1e2611] mb-2">Komposter</h3>
-                <p className="text-[#7c7f6a] text-sm leading-relaxed mb-4">
-                  Wadah untuk mengolah bahan organik menjadi pupuk yang dapat dimanfaatkan kembali. Sangat cocok untuk mengolah limbah seperti sisa sayuran, kulit buah, sisa tanaman, dan daun kering.
-                </p>
-                <ul className="text-sm text-[#1e2611] space-y-2">
-                  <li className="flex items-start gap-2">
-                    <svg className="w-5 h-5 text-[#8fa36c] shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path></svg>
-                    Mengurangi limbah organik.
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <svg className="w-5 h-5 text-[#8fa36c] shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path></svg>
-                    Menghasilkan bahan pupuk gratis.
-                  </li>
-                </ul>
-              </div>
-
-              {/* Card 2 */}
-              <div className="bg-white p-6 rounded-2xl border border-[#1e2611]/10 shadow-sm hover:shadow-md transition-shadow">
-                <div className="w-16 h-16 bg-[#e9e2d2] rounded-full flex items-center justify-center mb-4 relative overflow-hidden">
-                  <Image src="https://img.icons8.com/fluency/96/water-drop.png" alt="Pupuk Cair Icon" width={40} height={40} className="object-contain" />
-                </div>
-                <h3 className="text-xl font-semibold text-[#1e2611] mb-2">Pupuk Organik Cair</h3>
-                <p className="text-[#7c7f6a] text-sm leading-relaxed mb-4">
-                  Hasil pengolahan bahan organik dari komposter dapat dimanfaatkan sebagai pupuk organik cair yang sangat baik untuk mendukung pertumbuhan tanaman dengan nutrisi alami.
-                </p>
-                <ul className="text-sm text-[#1e2611] space-y-2">
-                  <li className="flex items-start gap-2">
-                    <svg className="w-5 h-5 text-[#8fa36c] shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path></svg>
-                    Mendukung pertumbuhan tanaman.
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <svg className="w-5 h-5 text-[#8fa36c] shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path></svg>
-                    Mudah digunakan di rumah.
-                  </li>
-                </ul>
-              </div>
-
-              {/* Card 3 */}
-              <div className="bg-white p-6 rounded-2xl border border-[#1e2611]/10 shadow-sm hover:shadow-md transition-shadow">
-                <div className="w-16 h-16 bg-[#e9e2d2] rounded-full flex items-center justify-center mb-4 relative overflow-hidden">
-                  <Image src="https://img.icons8.com/fluency/96/potted-plant.png" alt="Rak Vertikultur Icon" width={40} height={40} className="object-contain" />
-                </div>
-                <h3 className="text-xl font-semibold text-[#1e2611] mb-2">Rak Vertikultur</h3>
-                <p className="text-[#7c7f6a] text-sm leading-relaxed mb-4">
-                  Teknik budidaya tanaman dengan memanfaatkan ruang secara vertikal. Solusi sempurna bagi keluarga yang ingin bertani namun memiliki pekarangan yang sangat terbatas.
-                </p>
-                <ul className="text-sm text-[#1e2611] space-y-2">
-                  <li className="flex items-start gap-2">
-                    <svg className="w-5 h-5 text-[#8fa36c] shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path></svg>
-                    Cocok untuk pekarangan terbatas.
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <svg className="w-5 h-5 text-[#8fa36c] shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path></svg>
-                    Optimalisasi ruang.
-                  </li>
-                </ul>
-              </div>
-
-              {/* Card 4 */}
-              <div className="bg-white p-6 rounded-2xl border border-[#1e2611]/10 shadow-sm hover:shadow-md transition-shadow">
-                <div className="w-16 h-16 bg-[#e9e2d2] rounded-full flex items-center justify-center mb-4 relative overflow-hidden">
-                  <Image src="https://img.icons8.com/fluency/96/harvest.png" alt="Budidaya Icon" width={40} height={40} className="object-contain" />
-                </div>
-                <h3 className="text-xl font-semibold text-[#1e2611] mb-2">Budidaya & Panen</h3>
-                <p className="text-[#7c7f6a] text-sm leading-relaxed mb-4">
-                  Hasil akhir dari ekosistem ini adalah tersedianya sayur dan tanaman pangan bernutrisi dari kebun sendiri, yang siap dipanen untuk memenuhi kebutuhan gizi harian keluarga Anda.
-                </p>
-                <ul className="text-sm text-[#1e2611] space-y-2">
-                  <li className="flex items-start gap-2">
-                    <svg className="w-5 h-5 text-[#8fa36c] shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path></svg>
-                    Sumber pangan sehat mandiri.
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <svg className="w-5 h-5 text-[#8fa36c] shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path></svg>
-                    Menghemat pengeluaran dapur.
-                  </li>
-                </ul>
-              </div>
+              ))}
             </div>
 
-            <h2 className="text-3xl font-semibold text-[#1e2611] mb-6">Alur Pemanfaatan Terpadu</h2>
-            <p>
-              Dengan menggabungkan ketiga elemen di atas, Anda dapat menciptakan sebuah ekosistem pertanian mini di pekarangan Anda:
-            </p>
-            <ol className="list-decimal list-outside ml-6 space-y-4 my-6 text-[#7c7f6a]">
-              <li><strong className="text-[#1e2611]">Pisahkan Limbah:</strong> Mulailah dengan memisahkan sampah organik (sayur, buah, daun) dari sampah anorganik di dapur Anda.</li>
-              <li><strong className="text-[#1e2611]">Masuk ke Komposter:</strong> Masukkan limbah organik ke dalam komposter tertutup dan biarkan proses penguraian (dekomposisi) alami terjadi.</li>
-              <li><strong className="text-[#1e2611]">Saring Pupuk Cair:</strong> Setelah beberapa waktu, komposter akan menghasilkan cairan. Saring dan simpan sebagai pupuk organik cair yang kaya nutrisi.</li>
-              <li><strong className="text-[#1e2611]">Siapkan Rak Vertikultur:</strong> Susun rak secara bertingkat untuk menanam sayuran. Ini akan menghemat banyak ruang.</li>
-              <li><strong className="text-[#1e2611]">Gunakan Pupuk:</strong> Aplikasikan pupuk organik cair yang telah Anda buat untuk menyuburkan tanaman di rak vertikultur Anda secara rutin.</li>
-              <li><strong className="text-[#1e2611]">Panen & Nikmati:</strong> Sayur dan tanaman pangan segar siap dipanen untuk memenuhi sebagian kebutuhan gizi harian keluarga.</li>
-            </ol>
+            <div className="flex flex-col md:flex-row gap-12 my-16" ref={timelineRef}>
+              {/* Left Column (Sticky Title & Description) */}
+              <div className="md:w-1/3">
+                <div className="sticky top-32">
+                  <h2 className="text-3xl md:text-4xl font-semibold text-[#1e2611] mb-6 leading-tight">
+                    Alur Pemanfaatan Terpadu
+                  </h2>
+                  <p className="text-[#7c7f6a] text-lg leading-relaxed mb-6">
+                    Dengan menggabungkan ketiga elemen di atas, Anda dapat menciptakan sebuah ekosistem pertanian mini di pekarangan Anda. Proses ini memastikan siklus yang berkelanjutan dari dapur kembali ke meja makan.
+                  </p>
+                </div>
+              </div>
+
+              {/* Right Column (Timeline Steps) */}
+              <div className="md:w-2/3 relative">
+                {/* Timeline background line */}
+                <div className="absolute left-[23px] md:left-[27px] top-4 bottom-4 w-[2px] bg-[#e9e2d2]"></div>
+                
+                {/* Animated scroll progress line */}
+                <motion.div 
+                  className="absolute left-[23px] md:left-[27px] top-4 w-[2px] bg-[#8fa36c] origin-top"
+                  style={{ height: timelineHeight }}
+                ></motion.div>
+
+                <div className="flex flex-col gap-12 relative z-10">
+                  {timelineSteps.map((step, index) => (
+                    <div key={index} className="flex gap-6 md:gap-8">
+                      {/* Step Number Circle */}
+                      <div className="shrink-0 w-12 h-12 md:w-14 md:h-14 rounded-full bg-white border-2 border-[#e9e2d2] flex items-center justify-center font-bold text-[#1e2611] text-lg shadow-sm">
+                        {index + 1}
+                      </div>
+                      
+                      {/* Step Content */}
+                      <div className="pt-2 md:pt-3">
+                        <h3 className="text-xl md:text-2xl font-semibold text-[#1e2611] mb-2 md:mb-3 uppercase tracking-wide">
+                          {step.title}
+                        </h3>
+                        <p className="text-[#7c7f6a] leading-relaxed">
+                          {step.description}
+                        </p>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </div>
             
             <div className="bg-[#e9e2d2] p-8 rounded-2xl mt-12 mb-8 text-center border border-[#404f1d]/10">
               <h3 className="text-2xl font-semibold text-[#1e2611] mb-4">Siap Memulai Pekarangan Pangan Anda?</h3>

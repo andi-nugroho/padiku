@@ -94,7 +94,7 @@ export function BlogPreview() {
           viewport={{ once: true, margin: "-60px" }}
           transition={{ duration: 0.55, delay: 0.1 }}
         >
-          {POSTS.map((post, i) => (
+          {POSTS.slice(0, 3).map((post, i) => (
             <PostCard key={post.href} post={post} priority={i === 0} />
           ))}
         </motion.div>
