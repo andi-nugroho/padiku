@@ -23,21 +23,21 @@ const steps = [
     title: "Pengemasan & Quality Control",
     desc: "Setiap produk yang selesai dimasak akan dikemas secara aman dan menarik, lalu melewati proses quality control untuk menjaga cita rasa dan ketahanan produk.",
     tag: "Aman & Cita Rasa Terjaga",
-    image: "https://cdn.jsdelivr.net/gh/andi-nugroho/padiku@main/public/coffee.jpg",
+    image: "https://cdn.jsdelivr.net/gh/andi-nugroho/padiku@main/public/proses-produksi/3.png",
   },
   {
     n: "04",
     title: "Digitalisasi E-Katalog",
     desc: "Produk yang siap jual didata ke dalam sistem E-Katalog digital PADIKU untuk memperluas jangkauan pasar dan mempermudah akses informasi bagi pembeli.",
     tag: "Pemasaran Digital Terintegrasi",
-    image: "https://cdn.jsdelivr.net/gh/andi-nugroho/padiku@main/public/hero1.jpg",
+    image: "https://cdn.jsdelivr.net/gh/andi-nugroho/padiku@main/public/proses-produksi/4.png",
   },
   {
     n: "05",
     title: "Pemesanan via Hub WhatsApp",
     desc: "Pembeli dapat langsung memesan produk favorit mereka melalui WhatsApp Hub yang dikelola dengan responsif oleh pengelola UMKM desa.",
     tag: "Siap Distribusi & Pesan WA",
-    image: "https://cdn.jsdelivr.net/gh/andi-nugroho/padiku@main/public/hero3.jpg",
+    image: "https://cdn.jsdelivr.net/gh/andi-nugroho/padiku@main/public/proses-produksi/5.png",
   },
 ] as const
 
