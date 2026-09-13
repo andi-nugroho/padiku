@@ -46,7 +46,7 @@ export default function TentangKamiPage() {
     <>
       <ScrollProgress />
       <Nav />
-      <main className="pt-32 pb-20 px-6 max-w-7xl mx-auto vault-mobile-section">
+      <main className="vault-mobile-section max-w-7xl mx-auto">
         <div className="vault-mobile-header mb-16 text-center">
           <div className="section-label">Tentang Kami</div>
           <h2 className="section-title">

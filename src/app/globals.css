@@ -593,7 +593,8 @@ nav.site-nav {
 
 @media (max-width: 900px) {
   .vault-mobile-section {
-    padding: 80px 24px 96px;
+    /* Increased from 80px → 120px so the heading clears the fixed navbar on mobile */
+    padding: 120px 24px 96px;
   }
   .vault-mobile-header {
     margin-bottom: 48px;
@@ -609,6 +610,9 @@ nav.site-nav {
   overflow: hidden;
   background: var(--white);
   border: 1px solid rgba(30, 38, 17, 0.08);
+  /* GPU-composite the card so scroll doesn't trigger repaints */
+  will-change: transform;
+  contain: layout style;
 }
 
 .vault-mobile-image {
@@ -673,7 +677,8 @@ nav.site-nav {
 
 @media (max-width: 480px) {
   .vault-mobile-section {
-    padding: 60px 16px 72px;
+    /* Keep enough top padding for the navbar at small screens */
+    padding: 110px 16px 72px;
   }
 
   .vault-mobile-title {
