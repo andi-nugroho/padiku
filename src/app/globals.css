@@ -1557,11 +1557,26 @@ footer {
   padding: 5px 14px;
 }
 
-.blog-page-date {
+.blog-page-meta-details {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.blog-page-meta-item {
+  display: flex;
+  align-items: center;
+  gap: 6px;
   font-size: 13px;
   font-weight: 500;
   color: var(--stone);
   letter-spacing: 0.02em;
+}
+
+.blog-page-meta-item svg {
+  color: var(--stone);
+  opacity: 0.8;
 }
 
 .blog-page-title {
