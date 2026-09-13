@@ -4,20 +4,21 @@ const columns = [
   {
     title: "Program & Navigasi",
     links: [
-      { label: "Kenapa PADIKU", href: "#why" },
-      { label: "Proses Produksi", href: "#proses" },
-      { label: "Tentang Kami", href: "#tentang" },
-      { label: "Katalog Produk", href: "#katalog" },
-      { label: "Tanya Jawab", href: "#faq" },
+      { label: "Kenapa PADIKU", href: "/#why" },
+      { label: "Proses Produksi", href: "/#proses" },
+      { label: "Tentang Kami", href: "/tentang-kami" },
+      { label: "Katalog Produk", href: "/katalog" },
+      { label: "Blog & Artikel", href: "/blog" },
+      { label: "Tanya Jawab", href: "/#faq" },
     ],
   },
   {
     title: "Produk Unggulan",
     links: [
-      { label: "Grejeg (Khas Jagapura)", href: "#katalog" },
-      { label: "Sambel Garing", href: "#katalog" },
-      { label: "Gonjing Tradisional", href: "#katalog" },
-      { label: "Olahan Rumahan Lainnya", href: "#katalog" },
+      { label: "Grejeg (Khas Jagapura)", href: "/katalog" },
+      { label: "Sambel Garing", href: "/katalog" },
+      { label: "Gonjing Tradisional", href: "/katalog" },
+      { label: "Olahan Rumahan Lainnya", href: "/katalog" },
     ],
   },
   {

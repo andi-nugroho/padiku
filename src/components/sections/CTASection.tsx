@@ -1,5 +1,6 @@
 "use client"
 
+// MapLibre imports removed
 import { Button } from "@/components/ui/button"
 import { SplitText } from "@/components/ui/split-text"
 import Magnet from "@/components/reactbits/Magnet"
@@ -9,30 +10,35 @@ const IG_URL =
 const MAPS_URL =
   "https://maps.google.com/?q=Desa+Jagapura+Kulon+Kecamatan+Gegesik+Kabupaten+Cirebon"
 
+// Koordinat Desa Jagapura Kulon, Gegesik, Cirebon
+const PADIKU_LNG = 108.4441
+const PADIKU_LAT = -6.5796
+
 export function CTASection() {
   return (
     <section className="cta-final py-16">
       <div className="cta-final-inner max-w-5xl mx-auto px-4">
-        <div className="section-label">Lokasi & Kontak Usaha</div>
+        <div className="section-label">Lokasi &amp; Kontak Usaha</div>
         <h2 className="cta-final-title">
           <SplitText text="Kunjungi Lokasi & Pesan Produk PADIKU" />
         </h2>
         <p className="cta-final-sub mb-8">
-          Sentra UMKM PADIKU & Produksi Makanan Khas Desa Jagapura Kulon, Kecamatan Gegesik, Kabupaten Cirebon, Jawa Barat.
+          Sentra UMKM PADIKU &amp; Produksi Makanan Khas Desa Jagapura Kulon, Kecamatan Gegesik, Kabupaten Cirebon, Jawa Barat.
         </p>
 
-        {/* Embedded Google Maps */}
-        <div className="w-full h-80 rounded-2xl overflow-hidden mb-8 border border-white/20 shadow-lg">
-          <iframe
-            title="Peta Lokasi Desa Jagapura Kulon"
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15852.12874136453!2d108.4357!3d-6.5824!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e6ee545f49e4dbb%3A0x501e8f22a075300!2sJagapura%20Kulon%2C%20Kec.%20Gegesik%2C%20Kabupaten%20Cirebon%2C%20Jawa%20Barat!5e0!3m2!1sid!2sid!4v1700000000000!5m2!1sid!2sid"
-            width="100%"
-            height="100%"
-            style={{ border: 0 }}
-            allowFullScreen={false}
-            loading="lazy"
+        {/* Interactive Map (Google Maps Iframe) */}
+        <div className="w-full h-80 rounded-2xl overflow-hidden mb-8 border border-white/20 shadow-lg relative bg-[#e5e3df]">
+          <iframe 
+            src={`https://www.openstreetmap.org/export/embed.html?bbox=${PADIKU_LNG - 0.01}%2C${PADIKU_LAT - 0.01}%2C${PADIKU_LNG + 0.01}%2C${PADIKU_LAT + 0.01}&layer=mapnik&marker=${PADIKU_LAT}%2C${PADIKU_LNG}`}
+            width="100%" 
+            height="100%" 
+            style={{ border: 0 }} 
+            allowFullScreen={false} 
+            loading="lazy" 
             referrerPolicy="no-referrer-when-downgrade"
-          />
+            className="absolute inset-0"
+            title="OpenStreetMap - Desa Jagapura Kulon"
+          ></iframe>
         </div>
 
         <div className="cta-final-buttons flex flex-wrap justify-center gap-4">

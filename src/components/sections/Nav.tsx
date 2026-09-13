@@ -10,7 +10,7 @@ const links = [
   { label: "Proses Produksi", href: "/#proses" },
   { label: "Tentang Kami", href: "/tentang-kami" },
   { label: "Katalog Produk", href: "/katalog" },
-  { label: "Blog", href: "/blog" },
+  { label: "Blog & Artikel", href: "/blog" },
   { label: "Tanya Jawab", href: "/#faq" },
 ] as const
 
@@ -57,8 +57,22 @@ export function Nav() {
         {/* Desktop IG Button */}
         <div className="hidden md:flex flex-1 justify-end relative z-[110]">
           <Button variant="hero-cta" size="nav" className="group" asChild>
-            <a href={IG_URL} target="_blank" rel="noopener noreferrer">
-              <img src="https://img.icons8.com/?size=100&id=BrU2BBoRXiWq&format=png&color=000000" alt="Instagram" className="w-[18px] h-[18px] object-contain transition-all" />
+            <a href={IG_URL} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24">
+                <defs>
+                  <linearGradient id="ig-grad-desktop" x1="2" y1="22" x2="22" y2="2" gradientUnits="userSpaceOnUse">
+                    <stop stopColor="#f09433" />
+                    <stop offset="0.25" stopColor="#e6683c" />
+                    <stop offset="0.5" stopColor="#dc2743" />
+                    <stop offset="0.75" stopColor="#cc2366" />
+                    <stop offset="1" stopColor="#bc1888" />
+                  </linearGradient>
+                </defs>
+                <rect x="1" y="1" width="22" height="22" rx="6" fill="url(#ig-grad-desktop)" />
+                <rect x="5" y="5" width="14" height="14" rx="4" fill="none" stroke="#fff" strokeWidth="2" />
+                <circle cx="12" cy="12" r="3.5" fill="none" stroke="#fff" strokeWidth="2" />
+                <circle cx="17.5" cy="6.5" r="1.2" fill="#fff" />
+              </svg>
               @padiku.co
             </a>
           </Button>
@@ -141,7 +155,21 @@ export function Nav() {
             className="flex h-14 w-full items-center justify-center gap-2 rounded-full bg-[var(--olive-800)] hover:bg-[var(--olive-900)] text-xl font-medium text-[var(--bone)] transition-all shadow-[0_4px_14px_0_rgba(30,38,17,0.35)]"
             onClick={() => setIsOpen(false)}
           >
-            <img src="https://img.icons8.com/?size=100&id=BrU2BBoRXiWq&format=png&color=000000" alt="Instagram" className="w-6 h-6 object-contain" />
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+              <defs>
+                <linearGradient id="ig-grad-mobile" x1="2" y1="22" x2="22" y2="2" gradientUnits="userSpaceOnUse">
+                  <stop stopColor="#f09433" />
+                  <stop offset="0.25" stopColor="#e6683c" />
+                  <stop offset="0.5" stopColor="#dc2743" />
+                  <stop offset="0.75" stopColor="#cc2366" />
+                  <stop offset="1" stopColor="#bc1888" />
+                </linearGradient>
+              </defs>
+              <rect x="1" y="1" width="22" height="22" rx="6" fill="url(#ig-grad-mobile)" />
+              <rect x="5" y="5" width="14" height="14" rx="4" fill="none" stroke="#fff" strokeWidth="2" />
+              <circle cx="12" cy="12" r="3.5" fill="none" stroke="#fff" strokeWidth="2" />
+              <circle cx="17.5" cy="6.5" r="1.2" fill="#fff" />
+            </svg>
             @padiku.co
           </a>
         </nav>

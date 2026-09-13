@@ -24,7 +24,7 @@ const securityHeaders = [
   },
   {
     key: 'Content-Security-Policy',
-    value: "default-src 'self'; script-src 'self' 'unsafe-eval' 'unsafe-inline' https://cloud.umami.is; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data: https://cdn.jsdelivr.net blob:; font-src 'self' https://fonts.gstatic.com; connect-src 'self' https://cloud.umami.is;"
+    value: "default-src 'self'; script-src 'self' 'unsafe-eval' 'unsafe-inline' blob: https://cloud.umami.is https://unpkg.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data: https://cdn.jsdelivr.net https://basemaps.cartocdn.com https://*.basemaps.cartocdn.com blob:; font-src 'self' data: https://fonts.gstatic.com; connect-src 'self' https://cloud.umami.is https://basemaps.cartocdn.com https://*.basemaps.cartocdn.com https://unpkg.com; worker-src blob:;"
   }
 ];
 
