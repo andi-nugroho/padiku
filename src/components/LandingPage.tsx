@@ -13,6 +13,7 @@ import {
   MitraKolaborasi,
   SiteFooter,
   TentangKami,
+  BlogPreview,
 } from "./sections"
 import { ScrollProgress } from "./ui/scroll-progress"
 
@@ -31,6 +32,7 @@ export function LandingPage() {
         <HowItWorks />
         <TentangKami />
         <KatalogPreview />
+        <BlogPreview />
         <FAQ />
         <CTASection />
         <SiteFooter />

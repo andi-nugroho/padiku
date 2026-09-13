@@ -10,6 +10,7 @@ const links = [
   { label: "Proses Produksi", href: "/#proses" },
   { label: "Tentang Kami", href: "/tentang-kami" },
   { label: "Katalog Produk", href: "/katalog" },
+  { label: "Blog", href: "/blog" },
   { label: "Tanya Jawab", href: "/#faq" },
 ] as const
 
