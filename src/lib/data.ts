@@ -26,4 +26,12 @@ export const POSTS = [
     image: "https://cdn.jsdelivr.net/gh/andi-nugroho/padiku@main/public/news/news.png",
     href: "/blog/pupuk-cair",
   },
+  {
+    title: "Ketahanan Pangan dari Pekarangan Rumah: Solusi Cerdas Bertani di Lahan Terbatas",
+    excerpt: "Memanfaatkan limbah organik dan ruang terbatas untuk mendukung budidaya tanaman pangan keluarga dengan teknik komposter, pupuk organik cair, dan vertikultur.",
+    date: "14 September 2026",
+    tag: "Edukasi",
+    image: "https://cdn.jsdelivr.net/gh/andi-nugroho/padiku@main/public/poster/poster.png",
+    href: "/blog/ketahanan-pangan",
+  },
 ];
