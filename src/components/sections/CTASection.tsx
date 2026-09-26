@@ -29,7 +29,7 @@ export function CTASection() {
         {/* Interactive Map (Google Maps Iframe) */}
         <div className="w-full h-80 rounded-2xl overflow-hidden mb-8 border border-white/20 shadow-lg relative bg-[#e5e3df]">
           <iframe 
-            src={`https://www.openstreetmap.org/export/embed.html?bbox=${PADIKU_LNG - 0.01}%2C${PADIKU_LAT - 0.01}%2C${PADIKU_LNG + 0.01}%2C${PADIKU_LAT + 0.01}&layer=mapnik&marker=${PADIKU_LAT}%2C${PADIKU_LNG}`}
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31707.1362793132!2d108.42302195!3d-6.592534599999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e6ecb191c496155%3A0xe5a7d65b1b702da8!2sJagapura%20Kulon%2C%20Kec.%20Gegesik%2C%20Kabupaten%20Cirebon%2C%20Jawa%20Barat!5e0!3m2!1sid!2sid!4v1700000000000!5m2!1sid!2sid"
             width="100%" 
             height="100%" 
             style={{ border: 0 }} 
@@ -37,7 +37,7 @@ export function CTASection() {
             loading="lazy" 
             referrerPolicy="no-referrer-when-downgrade"
             className="absolute inset-0"
-            title="OpenStreetMap - Desa Jagapura Kulon"
+            title="Google Maps - Desa Jagapura Kulon"
           ></iframe>
         </div>
 
