@@ -14,6 +14,8 @@ const eslintConfig = defineConfig([
     "next-env.d.ts",
     // Vendored react-bits components (https://reactbits.dev) — not our style rules.
     "src/components/reactbits/**",
+    // Vendored shadcn maplibre component
+    "src/components/ui/map.tsx",
   ]),
 ]);
 

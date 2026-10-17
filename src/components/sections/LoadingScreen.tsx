@@ -9,8 +9,8 @@ export function LoadingScreen({ onComplete }: { onComplete: () => void }) {
   const [visible, setVisible] = useState(true)
 
   useEffect(() => {
-    // Show logo for a moment, then trigger exit
-    const timer = setTimeout(() => setPhase("exit"), 1800)
+    // Show logo for a crisp moment, then trigger exit
+    const timer = setTimeout(() => setPhase("exit"), 650)
     return () => clearTimeout(timer)
   }, [])
 
@@ -25,7 +25,7 @@ export function LoadingScreen({ onComplete }: { onComplete: () => void }) {
           exit={{ y: "-100%" }}
           transition={
             phase === "exit"
-              ? { duration: 0.9, ease: [0.76, 0, 0.24, 1] }
+              ? { duration: 0.45, ease: [0.76, 0, 0.24, 1] }
               : undefined
           }
           onAnimationComplete={() => {
@@ -40,11 +40,11 @@ export function LoadingScreen({ onComplete }: { onComplete: () => void }) {
             <motion.div
               initial={{ opacity: 0, scale: 0.85 }}
               animate={{ opacity: 1, scale: 1 }}
-              transition={{ duration: 0.6, ease: "easeOut" }}
+              transition={{ duration: 0.35, ease: "easeOut" }}
               className="flex flex-col items-center gap-2 mb-4"
             >
               <div className="w-20 h-20 relative">
-                <img src="https://cdn.jsdelivr.net/gh/andi-nugroho/padiku@main/public/logo-padiku.png" alt="PADIKU Logo" className="w-full h-full object-contain" />
+                <img src="/logo-padiku.png" alt="PADIKU Logo" className="w-full h-full object-contain" />
               </div>
               <span className="text-2xl font-bold text-[var(--olive-950)] tracking-tight">
                 PADIKU
@@ -60,7 +60,7 @@ export function LoadingScreen({ onComplete }: { onComplete: () => void }) {
                 className="loading-bar-fill"
                 initial={{ scaleX: 0 }}
                 animate={{ scaleX: 1 }}
-                transition={{ duration: 1.6, ease: [0.16, 1, 0.3, 1] }}
+                transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
               />
             </div>
           </div>

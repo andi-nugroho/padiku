@@ -1,6 +1,6 @@
 "use client"
 
-import { useState } from "react"
+import { useState, useEffect } from "react"
 import {
   KenapaPadiku,
   CTASection,
@@ -18,11 +18,34 @@ import {
 import { ScrollProgress } from "./ui/scroll-progress"
 
 export function LandingPage() {
-  const [loading, setLoading] = useState(true)
+  const [loading, setLoading] = useState(false)
+  const [showSplash, setShowSplash] = useState(false)
+
+  useEffect(() => {
+    try {
+      const alreadyVisited = sessionStorage.getItem("padiku_visited")
+      if (!alreadyVisited) {
+        sessionStorage.setItem("padiku_visited", "true")
+        setTimeout(() => {
+          setLoading(true)
+          setShowSplash(true)
+        }, 0)
+      }
+    } catch {
+      // Fallback if sessionStorage is not accessible
+    }
+  }, [])
 
   return (
     <>
-      {loading && <LoadingScreen onComplete={() => setLoading(false)} />}
+      {showSplash && loading && (
+        <LoadingScreen
+          onComplete={() => {
+            setLoading(false)
+            setShowSplash(false)
+          }}
+        />
+      )}
       <ScrollProgress />
       <Nav />
       <main>

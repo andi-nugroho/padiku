@@ -10,10 +10,6 @@ const IG_URL =
 const MAPS_URL =
   "https://maps.google.com/?q=Desa+Jagapura+Kulon+Kecamatan+Gegesik+Kabupaten+Cirebon"
 
-// Koordinat Desa Jagapura Kulon, Gegesik, Cirebon
-const PADIKU_LNG = 108.4441
-const PADIKU_LAT = -6.5796
-
 export function CTASection() {
   return (
     <section className="cta-final py-16">
